@@ -1,0 +1,29 @@
+:root {
+    --white-color: #fff;
+    --orange-color: #F9A11F;
+    --non-orange-color: #F9F3EC;
+    --yellow-color: #FFFBF8;
+    --text-color: #344A5F;
+}
+* {
+    box-sizing: inherit;
+
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Gilroy", sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_full_width {
+    width: 100%;
+}   
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+}
