@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2VET Dịch vụ toàn diện</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/vinh.css" />
+  </head>
+  <body class="font-primary">
+    <div class="h-8 md:h-[63px] w-full bg-primary"></div>
+    <div
+      class="h-[75px] md:h-[108px] px-4 md:px-20 border-b border-b-[#A6A8AB]"
+    >
+      <div class="flex items-center justify-between h-full">
+        <div id="open-button" class="md:hidden w-full">
+          <i class="fa-solid fa-bars text-primary text-xl"></i>
+        </div>
+
+        <div class="w-full md:w-fit">
+          <img
+            src="./assets/img/Rectangle.png"
+            class="w-32 md:w-44 h-14 md:h-20 object-cover"
+            alt="Logo"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="flex items-end space-x-10 w-full md:w-fit">
+          <div class="hidden md:block text-center">
+            <div class="flex items-center justify-center">
+              <img src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
+              <p class="font-bold text-xl text-gray">Cấp cứu 24/7:</p>
+            </div>
+
+            <p class="text-xl text-[#EC1C24] font-bold">
+              096 699 8126 - 039 840 9559
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <img class="w-8" src="./assets/img/vietnam.png" alt="Vietnam" />
+            <img
+              class="w-8"
+              src="./assets/img/united-kingdom.png"
+              alt="united kingdom"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative z-10 hidden"
+      id="slide-over"
+      aria-labelledby="slide-over-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="fixed inset-0 bg-black/40 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            class="pointer-events-none fixed inset-y-0 left-0 flex max-w-full pr-14"
+          >
+            <div
+              class="pointer-events-auto relative w-screen max-w-md bg-white shadow-xl transition-transform transform -translate-x-full"
+              id="panel"
+            >
+              <div
+                class="absolute right-0 top-0 -mr-8 flex pl-2 pt-4 sm:-mr-10 sm:pl-4"
+              >
+                <button
+                  type="button"
+                  id="close-button"
+                  class="relative rounded-md text-gray-300 text-white focus:outline-none"
+                >
+                  <span class="absolute -inset-2.5"></span>
+                  <span class="sr-only">Close panel</span>
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex h-full flex-col overflow-y-scroll py-6">
+                <div class="px-4 sm:px-6">
+                  <div class="flex">
+                    <input
+                      class="h-10 border border-r-0 border-[#BBBDBF] rounded-s-full w-full px-4"
+                      type="text"
+                      placeholder="Tìm kiếm ..."
+                    />
+                    <button
+                      class="w-[50px] h-10 rounded-e-full bg-primary shrink-0 flex items-center justify-center"
+                    >
+                      <i class="size-5 text-white" data-lucide="search"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative mt-6 flex-1">
+                  <div class="flex flex-col">
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-y border-[#ececec]"
+                      href="/"
+                      >Trang chủ</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/"
+                      >Giới thiệu</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
+                      href="/service.html"
+                      >Dịch vụ toàn diện</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/"
+                      >Ưu đãi</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/"
+                      >Kiến thức</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/"
+                      >Hoạt động sự kiện</a
+                    >
+                  </div>
+
+                  <div class="mt-6 px-4 sm:px-6">
+                    <div class="flex items-center mb-2">
+                      <img
+                        src="./assets/img/8-8.png"
+                        class="w-8 h-6 mr-2"
+                        alt=""
+                      />
+                      <p class="font-bold md:text-xl text-gray">
+                        Cấp cứu 24/7:
+                      </p>
+                    </div>
+
+                    <p class="md:text-xl text-[#EC1C24] font-bold">
+                      096 699 8126 - 039 840 9559
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="hidden md:block h-[83px] md:px-20">
+      <div
+        class="flex items-center justify-end w-full h-full mx-auto space-x-10"
+      >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="/"
+          >Trang chủ</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="#"
+          >Giới thiệu</a
+        >
+        <a
+          class="text-lg block cursor-pointer text-primary font-bold"
+          href="/service.html"
+          >Dịch vụ toàn diện</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="http://"
+          >Ưu đãi</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="http://"
+          >Kiến thức</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="http://"
+          >Hoạt động sự kiện</a
+        >
+
+        <div class="relative">
+          <input class="border border-gray px-2 h-[26px]" type="text" />
+          <i class="absolute top-1 right-1 size-5" data-lucide="search"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="md:px-20">
+      <img class="block" src="./assets/img/bg-service.png" alt="BG" />
+
+      <div class="mt-4 text-center">
+        <div class="border border-primary w-32 mb-2 mx-auto"></div>
+        <h4 class="text-2xl font-bold text-primary">Khám chữa bệnh</h4>
+      </div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto mt-10 px-4 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/cap-cuu.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Cấp cứu thú cưng 24/24
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/dich-vu.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Phẫu thuật ngoại khoa
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/kham.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Khám tư vấn và điều trị bệnh
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="https://2vet.vn/wp-content/uploads/2024/07/20231002075405_fpdl.in_pet-care-concept-female-veterinary-is-examining-cat-examination-table-vet-clinic_1423-5825_large.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Tắm sấy, Spa & Cắt tỉa
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/x-quang.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Siêu âm, X-quang, Xét nghiệm
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/triet-san.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Triệt sản chó mèo
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="./assets/img/dua-don.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Dịch vụ đưa đón tại nhà
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+
+        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-48">
+            <img
+              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+              src="https://2vet.vn/wp-content/uploads/2024/07/20231002075405_fpdl.in_pet-care-concept-female-veterinary-is-examining-cat-examination-table-vet-clinic_1423-5825_large.jpg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <h2
+              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            >
+              Khách sạn thú cưng
+            </h2>
+            <p class="text-sm text-[#535656] line-clamp-3">
+              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
+              đa chấn thương cứu sống các bé
+            </p>
+          </div>
+
+          <div
+            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
+          ></div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <div class="border border-primary w-32 mb-2 mx-auto"></div>
+        <h4 class="text-2xl font-bold text-primary">Trang thiết bị hiện đại</h4>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-1 mt-10">
+        <div>
+          <img src="./assets/img/TBW/2.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/3.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/4.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/5.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/6.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/1.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/7.png" alt="Trang thiết bị" />
+        </div>
+
+        <div>
+          <img src="./assets/img/TBW/8.png" alt="Trang thiết bị" />
+        </div>
+      </div>
+
+      <div class="my-10 md:px-10">
+        <div class="h-12 md:h-20 bg-[#E17B26] flex items-center px-6 md:px-10">
+          <h1 class="text-white text-lg md:text-4xl uppercase font-bold">
+            Đặt lịch hẹn
+          </h1>
+        </div>
+
+        <form class="px-4 md:px-10 pt-5 md:pt-10">
+          <div class="flex flex-col space-y-8">
+            <div>
+              <input
+                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                type="text"
+                name="name"
+                placeholder="Tên của bạn*"
+                required
+              />
+            </div>
+
+            <div>
+              <input
+                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                type="tel"
+                name="phone"
+                placeholder="Số điện thoại của bạn*"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="address" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
+                >Địa chỉ:</label
+              >
+              <input
+                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                type="text"
+                name="address"
+                placeholder="Địa chỉ của bạn*"
+                value="128 Chu Văn An, Phường 26, Quận Bình Thạnh"
+                required
+              />
+            </div>
+
+            <div class="flex items-center justify-between space-x-4">
+              <div class="w-full">
+                <label for="date" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
+                  >Ngày hẹn*:</label
+                >
+                <input
+                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                  type="date"
+                  name="date"
+                  required
+                />
+              </div>
+
+              <div class="w-full">
+                <label for="time" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
+                  >Thời gian:</label
+                >
+                <input
+                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                  type="time"
+                  name="time"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="service" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
+                >Dịch vụ yêu cầu:</label
+              >
+              <input
+                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                type="text"
+                name="service"
+                placeholder="Tiêm phòng"
+              />
+            </div>
+
+            <div class="text-center">
+              <button
+                class="uppercase h-10 font-bold md:text-xl text-white bg-[#E17B26] px-4 rounded-lg"
+              >
+                Gửi thông tin
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0067437664393!2d106.70554017585383!3d10.810794858557157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1733451165135!5m2!1svi!2s"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div>
+            <h2 class="text-white font-bold text-2xl">
+              Hãy ghé thăm chúng tôi ngay hôm nay!
+            </h2>
+
+            <div class="my-3 text-[#344A5F]">
+              <p class="text-sm font-medium">
+                Địa chỉ: 128 Chu Văn An, phường 26, Quận Bình Thạnh
+              </p>
+              <p class="text-sm font-medium my-1">
+                Emial: contact.2vet@gmail.com
+              </p>
+              <p class="text-sm font-medium">Hotline: 098 616 8126</p>
+            </div>
+
+            <div class="flex items-center space-x-8">
+              <div
+                class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+              >
+                <i class="fa-brands fa-facebook-f text-white"></i>
+              </div>
+
+              <div
+                class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+              >
+                <i class="fa-brands fa-tiktok text-white"></i>
+              </div>
+
+              <div
+                class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+              >
+                <i class="fa-brands fa-youtube text-white"></i>
+              </div>
+
+              <div
+                class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+              >
+                <p class="text-xs font-bold text-white">Zalo</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-2xl text-white font-bold">Thời gian làm việc</h2>
+
+            <div class="mt-3 text-[#344A5F]">
+              <p class="text-sm font-medium">Tất cả các ngày trong tuần</p>
+              <p class="text-sm font-medium my-1">
+                Từ thứ 2 đến chủ nhật: 8:00 - 19:30
+              </p>
+              <p class="text-sm font-medium">Trực cấp cứu: Từ 20:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const slideOver = document.getElementById('slide-over');
+        const panel = document.getElementById('panel');
+        const openButton = document.getElementById('open-button');
+        const closeButton = document.getElementById('close-button');
+
+        function openSlideOver() {
+          slideOver.classList.remove('hidden');
+          panel.classList.remove('-translate-x-full');
+          panel.classList.add('translate-x-0');
+        }
+
+        function closeSlideOver() {
+          panel.classList.remove('translate-x-0');
+          panel.classList.add('-translate-x-full');
+          setTimeout(() => {
+            slideOver.classList.add('hidden');
+          }, 300);
+        }
+
+        openButton.addEventListener('click', openSlideOver);
+        closeButton.addEventListener('click', closeSlideOver);
+
+        slideOver.addEventListener('click', (e) => {
+          if (e.target === slideOver) {
+            closeSlideOver();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
