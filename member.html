@@ -20,7 +20,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/vinh.css" />
   </head>
@@ -141,12 +142,12 @@
                       >Giới thiệu</a
                     >
                     <a
-                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
                       href="/service.html"
                       >Dịch vụ toàn diện</a
                     >
                     <a
-                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
                       href="./member.html"
                       >Ưu đãi</a
                     >
@@ -201,12 +202,12 @@
           >Giới thiệu</a
         >
         <a
-          class="text-lg block cursor-pointer text-primary font-bold"
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="/service.html"
           >Dịch vụ toàn diện</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-lg block cursor-pointer text-primary font-bold"
           href="./member.html"
           >Ưu đãi</a
         >
@@ -228,263 +229,210 @@
       </div>
     </nav>
 
-    <div class="md:px-20">
-      <img class="block" src="./assets/img/bg-service.png" alt="BG" />
+    <div>
+      <img class="block" src="./assets/img/bg-member.png" alt="BG" />
 
       <div class="mt-4 text-center">
         <div class="border border-primary w-32 mb-2 mx-auto"></div>
-        <h4 class="text-2xl font-bold text-primary">Khám chữa bệnh</h4>
+        <h4 class="text-2xl font-bold text-gray">Ưu đãi</h4>
       </div>
     </div>
 
-    <div class="max-w-screen-xl mx-auto mt-5 md:mt-10 px-4 md:px-0">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
+    <div class="max-w-screen-xl mx-auto nt-5 md:mt-10 px-4 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme">
+        <div class="rounded-lg p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-56">
             <img
               class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/cap-cuu.jpg"
+              src="./assets/img/birthday.png"
               alt=""
             />
           </div>
 
           <div>
             <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+              class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
             >
-              Cấp cứu thú cưng 24/24
+              Đại tiệc sinh nhật 13 tuối - 2VET dành tặng quý khách ưu đãi lớn
             </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
+            <p class="text-sm text-gray line-clamp-3">
+              Nhân dịp kỷ niệm 13 năm thành lập, Hệ thống thú y 2Vet mang đến
+              những ưu đãi hấp dẫn nhất từ trước tới nay, tri ân quý khách hàng
+              đã tin tưởng và đồng hành cùng chúng tôi suốt...
             </p>
           </div>
 
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center">
+              <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+              <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+            </div>
+
+            <button
+              class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+            >
+              Xem thêm
+            </button>
+          </div>
         </div>
 
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
+        <div class="rounded-lg p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-56">
             <img
               class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/dich-vu.jpg"
+              src="./assets/img/discount.jpg"
               alt=""
             />
           </div>
 
           <div>
             <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+              class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
             >
-              Phẫu thuật ngoại khoa
+              Chương trình ưu đãi đặt lịch qua app Miniapp 2VET
             </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
+            <p class="text-sm text-gray line-clamp-3">
+              Hệ thống bệnh viện thú y 2Vet mang đến cơ hội không thể bỏ lỡ dành
+              cho tất cả chủ nuôi. Chỉ cần đặt lịch thành công qua Miniapp 2Vet,
+              bạn sẽ nhận được GIẢM NGAY 10% – TỐI ĐA...
             </p>
           </div>
 
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center">
+              <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+              <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+            </div>
+
+            <button
+              class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+            >
+              Xem thêm
+            </button>
+          </div>
         </div>
 
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
+        <div class="rounded-lg p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-56">
             <img
               class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/kham.jpg"
+              src="./assets/img/gift.png"
               alt=""
             />
           </div>
 
           <div>
             <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+              class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
             >
-              Khám tư vấn và điều trị bệnh
+              Chương trình tháng kỷ niệm thành viên 2VET - Ưu đãi hấp dẫn dành
+              cho khách hàng!
             </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
+            <p class="text-sm text-gray line-clamp-3">
+              Để tri ân sự ủng hộ và đồng hành của quý khách hàng, 2Vet mang đến
+              chương trình tháng kỷ niệm thành viên 2Vet với những voucher hấp
+              dẫn dành cho tất cả khách hàng sở hữu thẻ thành viên....
             </p>
           </div>
 
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center">
+              <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+              <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+            </div>
+
+            <button
+              class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+            >
+              Xem thêm
+            </button>
+          </div>
         </div>
 
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
+        <div class="rounded-lg p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-56">
             <img
               class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="https://2vet.vn/wp-content/uploads/2024/07/20231002075405_fpdl.in_pet-care-concept-female-veterinary-is-examining-cat-examination-table-vet-clinic_1423-5825_large.jpg"
+              src="./assets/img/birthday-bt.png"
               alt=""
             />
           </div>
 
           <div>
             <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+              class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
             >
-              Tắm sấy, Spa & Cắt tỉa
+              Mừng sinh nhật 2VET Bình Thạnh - Ưu đãi chưa từng có
             </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
+            <p class="text-sm text-gray line-clamp-3">
+              Mừng 2Vet Bình Thạnh tròn 1 năm tuổi – Quà tặng ngập tràn dành cho
+              Boss và Sen. Duy nhất chỉ trong 2 ngày từ 17-19/11/2024. Gói khám
+              sức khỏe toàn diện chỉ còn 550.000đ (Giá gốc 1.100.000đ) Gói
+              khám...
             </p>
           </div>
 
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center">
+              <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+              <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+            </div>
+
+            <button
+              class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+            >
+              Xem thêm
+            </button>
+          </div>
         </div>
 
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
+        <div class="rounded-lg p-[10px] bg-white group">
+          <div class="rounded-lg overflow-hidden h-56">
             <img
               class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/x-quang.jpg"
+              src="./assets/img/year-birthday.png"
               alt=""
             />
           </div>
 
           <div>
             <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+              class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
             >
-              Siêu âm, X-quang, Xét nghiệm
+              Bệnh viện thú y 2VET Bình Thạnh - Kỷ niệm một năm thành lập
             </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
+            <p class="text-sm text-gray line-clamp-3">
+              Ngày 18/11/2024, Bệnh viện Thú y 2Vet Bình Thạnh hân hoan đánh dấu
+              một cột mốc đáng nhớ – kỷ niệm 1 năm thành lập. Trong suốt hành
+              trình này, 2Vet Bình Thạnh đã nỗ lực không ngừng để cung...
             </p>
           </div>
 
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
-        </div>
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center">
+              <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+              <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+            </div>
 
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
-            <img
-              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/triet-san.png"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
+            <button
+              class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
             >
-              Triệt sản chó mèo
-            </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
-            </p>
+              Xem thêm
+            </button>
           </div>
-
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
-        </div>
-
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
-            <img
-              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="./assets/img/dua-don.jpg"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
-            >
-              Dịch vụ đưa đón tại nhà
-            </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
-            </p>
-          </div>
-
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
-        </div>
-
-        <div class="relative rounded-lg shadow-card p-[10px] bg-white group">
-          <div class="rounded-lg overflow-hidden h-48">
-            <img
-              class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
-              src="https://2vet.vn/wp-content/uploads/2024/07/20231002075405_fpdl.in_pet-care-concept-female-veterinary-is-examining-cat-examination-table-vet-clinic_1423-5825_large.jpg"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <h2
-              class="my-2 text-primary font-semibold group-hover:text-[#7B391A] duration-300 ease-linear transition-colors"
-            >
-              Khách sạn thú cưng
-            </h2>
-            <p class="text-sm text-[#535656] line-clamp-3">
-              Đội ngũ bác sĩ chuyên môn cao đã thực hiện rất nhiều ca phẫu thuật
-              đa chấn thương cứu sống các bé
-            </p>
-          </div>
-
-          <div
-            class="absolute w-full bottom-0 left-0 rounded-b-lg h-1 bg-linear"
-          ></div>
         </div>
       </div>
 
       <div class="mt-6 md:mt-8 text-center">
         <div class="border border-primary w-32 mb-2 mx-auto"></div>
-        <h4 class="text-2xl font-bold text-primary">Trang thiết bị hiện đại</h4>
+        <h4 class="text-2xl font-bold text-gray">Membership</h4>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-1 mt-5 md:mt-10">
-        <div>
-          <img src="./assets/img/TBW/2.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/3.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/4.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/5.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/6.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/1.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/7.png" alt="Trang thiết bị" />
-        </div>
-
-        <div>
-          <img src="./assets/img/TBW/8.png" alt="Trang thiết bị" />
-        </div>
+      <div class="mt-5 md:mt-10">
+        <img
+          src="./assets/img/membership-banner.png"
+          alt="Bảng thứ hàng member"
+        />
       </div>
 
       <div class="my-10 md:px-10">
@@ -651,6 +599,19 @@
       </div>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Development version -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
@@ -689,6 +650,27 @@
           if (e.target === slideOver) {
             closeSlideOver();
           }
+        });
+      });
+
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          center: true,
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 3,
+              nav: false,
+            },
+          },
         });
       });
     </script>
