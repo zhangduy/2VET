@@ -62,4 +62,82 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroyLight.eot');
+    src: url('../fonts/SVN-GilroyLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-GilroyLight.woff2') format('woff2'),
+        url('../fonts/SVN-GilroyLight.woff') format('woff'),
+        url('../fonts/SVN-GilroyLight.ttf') format('truetype'),
+        url('../fonts/SVN-GilroyLight.svg#SVN-GilroyLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroyBold.eot');
+    src: url('../fonts/SVN-GilroyBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-GilroyBold.woff2') format('woff2'),
+        url('../fonts/SVN-GilroyBold.woff') format('woff'),
+        url('../fonts/SVN-GilroyBold.ttf') format('truetype'),
+        url('../fonts/SVN-GilroyBold.svg#SVN-GilroyBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroyBlack.eot');
+    src: url('../fonts/SVN-GilroyBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-GilroyBlack.woff2') format('woff2'),
+        url('../fonts/SVN-GilroyBlack.woff') format('woff'),
+        url('../fonts/SVN-GilroyBlack.ttf') format('truetype'),
+        url('../fonts/SVN-GilroyBlack.svg#SVN-GilroyBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroyMedium.eot');
+    src: url('../fonts/SVN-GilroyMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-GilroyMedium.woff2') format('woff2'),
+        url('../fonts/SVN-GilroyMedium.woff') format('woff'),
+        url('../fonts/SVN-GilroyMedium.ttf') format('truetype'),
+        url('../fonts/SVN-GilroyMedium.svg#SVN-GilroyMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-Gilroy.eot');
+    src: url('../fonts/SVN-Gilroy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-Gilroy.woff2') format('woff2'),
+        url('../fonts/SVN-Gilroy.woff') format('woff'),
+        url('../fonts/SVN-Gilroy.ttf') format('truetype'),
+        url('../fonts/SVN-Gilroy.svg#SVN-Gilroy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('../fonts/SVN-GilroySemiBold.eot');
+    src: url('../fonts/SVN-GilroySemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-GilroySemiBold.woff2') format('woff2'),
+        url('../fonts/SVN-GilroySemiBold.woff') format('woff'),
+        url('../fonts/SVN-GilroySemiBold.ttf') format('truetype'),
+        url('../fonts/SVN-GilroySemiBold.svg#SVN-GilroySemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 
