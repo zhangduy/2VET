@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 .sos {
@@ -27,7 +27,9 @@
 }
 .sos-title {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 .img-help {
     height: 30px;
@@ -38,10 +40,13 @@
 }
 .sos-tel {
     color: #EC1C24;
+    text-decoration: none;
     
 }
 .navbar-lang {
-    padding-top: 20px;
+    width: 25px;
+    gap: 10px;
+    display: flex;
 }
 .navbar-menu {
     height: 80px;
@@ -55,10 +60,21 @@
     display: flex;
     font-size: 16px;
     font-weight: bold;
-    gap: 40px;
+    justify-content: space-evenly;
+    width: 80%;
 }
 .nav-link {
     text-decoration: none;
+    color: var(--text-color);
+}
+.search {
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+    padding-left: 5px;
+    width: 60%;
+}
+.color-web {
+    color: var(--orange-color);
 }
 .img-service {
     height: 100%;
@@ -87,6 +103,7 @@
     color: var(--text-color);
     justify-content: space-evenly;
     padding-top: 2vw;
+    padding-bottom: 2vw;
     
 }
 .introduce-size {
@@ -110,7 +127,7 @@
 }
 .introduce-detail-p {
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.5;
     color: var(--text-color);
     margin: 0px;
 }
@@ -130,15 +147,14 @@
 .service-detail {
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 .service-detail-items {
     display: flex;
-    width: 75%;
+    height: 80%;
     
 }
 .service-items {
-    width: 23%;
+    height: 80%;
     background-color: var(--orange-color);
     border-radius: 10px;
     display: flex;
@@ -158,14 +174,14 @@
 .hospital-detail {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
 }
 .hospital-detail-items {
     display: flex;
     font-size: 20px;
-    width: 18%;
-    padding: 20px;
+    width: 21%;
+    padding: 40px;
     flex-direction: column;
 }
 .hospital-items {
@@ -194,7 +210,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--yellow-color);
+    background-color: var(--non-orange-color);
 }
 .member-group {
     display: flex;
@@ -253,11 +269,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 85%;
 }
 .case-img-2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 85%;
 }
 .img-1-detail {
     border: 3px solid var(--orange-color);
@@ -285,21 +303,21 @@
 }
 .finish-content {
     width: 70%;
-    height: auto;
+    height: 30vw;
     display: flex;
     justify-content: space-evenly;
     margin-top: 2vw;
     color: var(--text-color);
+    text-align: center;
 }
 .finish-items {
     width: 27%;
 }
 .finish-title {
-    font-size: 7vw;
-    font-family: fantasy;
+    width: 100%;
 }
 .title-detail {
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 600;
 }
 .icon-button {
@@ -375,6 +393,7 @@
     width: 65%;
     font-size: 25px;
     color: var(--text-color);
+    margin-top: 2vw;
 
 
 }
@@ -398,6 +417,7 @@
     border-radius: 8px;
     border: 0.7px solid #BBBDBF;
     padding: 10px 20px;
+    color: var(--text-color);
 }
 .time {
     display: flex;
@@ -417,6 +437,7 @@
     border-radius: 8px;
     border: 0.7px solid #BBBDBF;
     padding: 10px 20px;
+    color: var(--text-color);
 }
 .register-button {
     background-color: #E17B26;
@@ -444,7 +465,7 @@
 .footer-title {
     font-size: 25px;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .footer-title-detail {
     font-size: 15px;
@@ -455,40 +476,51 @@
     padding-top: 25px;
     display: flex;
 }
-.dropdown {
-    position: relative;
-    display: none;
-}
-
-.dropdown-button {
+.dropbtn {
     background-color: transparent;
-    color: white;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
-}
-.drop-link {
-    border: 1px solid white;
-    font-size: 15px;
-}
+  }
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 99999;
+  }
+  
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--orange-color);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #8c601f;
+    min-width: 300px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
-}
-
+  }
+  
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+  }
+  
+.dropdown a:hover {
+    background-color: #ddd;
 }
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+  
+.show {
+    display: block;
+}
+.dropdown-items{
+    border-bottom: 2px solid white;
 }
 .img-service-mb {
     display: none;
@@ -503,6 +535,7 @@
     bottom: 50%;
     right: 2%;
     z-index: 99999;
+    
 }
 .messenge-icon-1 {
     width: 50px;
@@ -551,8 +584,15 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-
 }
+.blink_me {
+	  animation: blinker 1s linear infinite;
+	}
+@keyframes blinker {
+	  50% {
+		opacity: 0;
+	  }
+	}
 @media (max-width: 1100px) {
     .hospital-detail-items {
         min-width: 25%;
@@ -562,7 +602,7 @@
         margin-bottom: 20px;
     }
 }
-@media (max-width: 769px){
+@media (max-width: 769px) {
     .introduce{
         flex-direction: column-reverse;
         justify-content: center;
@@ -612,15 +652,17 @@
         font-size: 12px;
         text-align: center;
     }
-    .hidden {
+    .hidden-mb {
         display: none;
     }
+    .service-detail {
+        justify-content: center;
+    }
     .service-detail-items {
-        flex-wrap: wrap;
         width: 86%;
+        justify-content: center;
     }
     .service-items {
-        width: 46%;
         margin: 1vw;
         padding: 5px;
     }
@@ -628,6 +670,7 @@
         width: 45%;
         height: 39vw;
         margin-bottom: 2vw;
+        justify-content: center;
     }
     .member-group {
         flex-wrap: wrap;

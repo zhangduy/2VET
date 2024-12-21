@@ -19,7 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/vinh.css" />
@@ -46,7 +47,7 @@
         <div class="flex items-end space-x-10 w-full md:w-fit">
           <div class="hidden md:block text-center">
             <div class="flex items-center justify-center">
-              <img src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
+              <img class="blink_me" src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
               <p class="font-bold text-xl text-gray">Cấp cứu 24/7:</p>
             </div>
 
@@ -132,17 +133,17 @@
                   <div class="flex flex-col">
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-y border-[#ececec]"
-                      href="/"
+                      href="./index.html"
                       >Trang chủ</a
                     >
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
-                      href="/"
+                      href="./introduce.html"
                       >Giới thiệu</a
                     >
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
-                      href="/service.html"
+                      href="./service.html"
                       >Dịch vụ toàn diện</a
                     >
                     <a
@@ -192,12 +193,12 @@
       >
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="/"
+          href="/index.html"
           >Trang chủ</a
         >
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="#"
+          href="./introduce.html"
           >Giới thiệu</a
         >
         <a
@@ -217,7 +218,7 @@
         >
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="http://"
+          href="./activity.html"
           >Hoạt động sự kiện</a
         >
 
@@ -227,9 +228,15 @@
         </div>
       </div>
     </nav>
-
+    <div class="slider">
+      <div class="owl-carousel" id="slide-3">
+          <img src="assets/img/top.png" alt="Image 1">
+          <img src="assets/img/top-1.png" alt="Image 2">
+          <img src="assets/img/top-2.png" alt="Image 3">
+      </div>
+    </div>
     <div class="md:px-20">
-      <img class="block" src="./assets/img/bg-service.png" alt="BG" />
+      
 
       <div class="mt-4 text-center">
         <div class="border border-primary w-32 mb-2 mx-auto"></div>
@@ -578,13 +585,58 @@
         </form>
       </div>
     </div>
+    <div class="fixed z-10 bottom-20 right-10">
+      <div class="flex flex-col items-center">
+        <div class="hidden md:block relative">
+          <div
+            class="absolute w-14 h-14 rounded-[50%] bg-[#3788e5d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+            style="box-shadow: 0 0 0px 0px #3788e5cc"
+          ></div>
 
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#3788e5] flex items-center justify-center"
+          >
+            <a href="#">
+              <i class="fa-brands fa-facebook-messenger fa-xl text-white"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden md:block relative mt-[70px]">
+          <div
+            class="absolute w-14 h-14 rounded-[50%] bg-[#2196f3] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+            style="box-shadow: 0 0 0px 0px #2196f3b3"
+          ></div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center"
+          >
+            <a href="#">
+              <p class="text-white font-bold text-sm">Zalo</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative mt-[70px]">
+          <div
+            class="absolute w-14 h-14 rounded-[50%] bg-rose-500 -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+            style="box-shadow: 0 0 0px 0px #fb7186d4"
+          ></div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-rose-600 flex items-center justify-center"
+          >
+            <a href="#">
+              <i class="fa-solid fa-phone fa-xl text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
       <div class="max-w-screen-xl mx-auto px-4 md:px-0">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0067437664393!2d106.70554017585383!3d10.810794858557157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1733451165135!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0068125891016!2d106.7055401758953!3d10.810789589340086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1734757361995!5m2!1sen!2s"
               width="100%"
               height="200"
               style="border: 0"
@@ -650,7 +702,18 @@
         </div>
       </div>
     </footer>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Development version -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
@@ -689,6 +752,27 @@
           if (e.target === slideOver) {
             closeSlideOver();
           }
+        });
+      });
+      $(document).ready(function () {
+        $("#slide-3").owlCarousel({
+          center: true,
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 1,
+              nav: false,
+            },
+          },
         });
       });
     </script>

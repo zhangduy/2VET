@@ -1,3 +1,6 @@
+.web {
+    width: 100%;
+}
 .top {
     height: 63px;
     width: 100%;
@@ -27,7 +30,9 @@
 }
 .sos-title {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 .img-help {
     height: 30px;
@@ -38,10 +43,13 @@
 }
 .sos-tel {
     color: #EC1C24;
+    text-decoration: none;
     
 }
 .navbar-lang {
-    padding-top: 20px;
+    width: 25px;
+    gap: 10px;
+    display: flex;
 }
 .navbar-menu {
     height: 80px;
@@ -55,10 +63,21 @@
     display: flex;
     font-size: 16px;
     font-weight: bold;
-    gap: 40px;
+    justify-content: space-evenly;
+    width: 80%;
 }
 .nav-link {
     text-decoration: none;
+    color: var(--text-color);
+}
+.search {
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+    padding-left: 5px;
+    width: 60%;
+}
+.color-web {
+    color: var(--orange-color);
 }
 .img-service {
     height: 100%;
@@ -87,7 +106,7 @@
     color: var(--text-color);
     justify-content: space-evenly;
     padding-top: 2vw;
-    
+    padding-bottom: 2vw;
 }
 .introduce-size {
     width: 45%;
@@ -110,12 +129,16 @@
 }
 .introduce-detail-p {
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.5;
     color: var(--text-color);
     margin: 0px;
 }
 .service {
     background-color: var(--non-orange-color);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .rule-service {
     display: flex;
@@ -130,12 +153,20 @@
 .service-detail {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    width: 85%;
+    height: 90vh;
 }
+
 .service-detail-items {
     display: flex;
     width: 75%;
-    
+    flex-direction: column;
+    gap: 5vw;
+}
+.items-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .service-items {
     width: 23%;
@@ -158,13 +189,13 @@
 .hospital-detail {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
 }
 .hospital-detail-items {
     display: flex;
     font-size: 20px;
-    width: 18%;
+    width: 21%;
     padding: 20px;
     flex-direction: column;
 }
@@ -375,8 +406,10 @@
     width: 65%;
     font-size: 25px;
     color: var(--text-color);
-
-
+    margin-top: 2vw;
+}
+.color-web {
+    color: var(--orange-color);
 }
 .register-title {
     background-color: #E17B26;
@@ -455,41 +488,6 @@
     padding-top: 25px;
     display: flex;
 }
-.dropdown {
-    position: relative;
-    display: none;
-}
-
-.dropdown-button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.drop-link {
-    border: 1px solid white;
-    font-size: 15px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--orange-color);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
 .img-service-mb {
     display: none;
     height: 100%;
@@ -551,7 +549,26 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-
+}
+.slider {
+    width: 100vw; 
+    height: auto; 
+    overflow: hidden; 
+    margin: 50px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+.hospital-more {
+    display: none;
+    width: 60%;
+}
+.more-title {
+    font-size: 45px;
+    padding-left: 20px;
+}
+.more-title-detail {
+    font-size: 28px;
 }
 @media (max-width: 1100px) {
     .hospital-detail-items {
@@ -563,6 +580,9 @@
     }
 }
 @media (max-width: 769px){
+    .web {
+        width: 100%;
+    }
     .introduce{
         flex-direction: column-reverse;
         justify-content: center;
@@ -587,9 +607,51 @@
     .sos {
         display: none;
     }
+    .dropbtn {
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: transparent;
+      }
+      
     .dropdown {
         position: relative;
         display: inline-block;
+        z-index: 99999;
+      }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #8c601f;
+        min-width: 300px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+      
+    .show {
+        display: block;
+    }
+    .dropdown-items{
+        border-bottom: 2px solid white;
     }
     .img-service {
         display: none;
@@ -686,6 +748,7 @@
     }
     .register {
         width: 95%;
+        margin-top: 2vw;
     }
     .center-font {
         font-size: 15px;    
