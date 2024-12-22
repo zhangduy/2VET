@@ -10,9 +10,8 @@
 
 }
 html {
-    font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: "Gilroy", sans-serif;
+    font-family: "SVN-Gilroy", sans-serif;
     box-sizing: border-box;
 }
 .grid {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2vet</title>
+    <title>2VET BÌNH THẠNH</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -12,60 +12,921 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/font.css" />
-    <link
-      rel="stylesheet"
-      href="/assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
-    />
+    <link rel="stylesheet" href="./assets/css/vinh.css" />
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"/>
+    <link href="assets/img/aos-master/dist/aos.css" rel="stylesheet">
+    <script src="assets/img/aos-master/dist/aos.js"></script>
+
   </head>
-  <body>
+  <body class="font-primary">
     <div class="web">
-      <header class="header">
-        <div class="top"></div>
-        <div class="navbar">
-          <img src="assets/img/Rectangle.png" alt="" />
-          <div class="navbar-sos">
-            <div class="sos">
-              <div class="sos-title">
-                <img class="img-help" src="assets/img/8-8.png" alt="" />
-                <p class="help">Cấp cứu 24/7:</p>
-              </div>
-              <div class="sos-tel">096 699 8126 - 039 840 9559</div>
+      <div class="h-8 md:h-[63px] w-full bg-primary"></div>
+    <div class="h-[75px] md:h-[108px] px-4 md:px-20 border-b border-b-[#A6A8AB]" >
+      <div class="flex items-center justify-between h-full">
+        <div id="open-button" class="md:hidden w-full">
+          <i class="fa-solid fa-bars text-primary text-xl"></i>
+        </div>
+
+        <div class="w-full md:w-fit">
+          <img
+            src="./assets/img/Rectangle.png"
+            class="w-32 md:w-44 h-14 md:h-20 object-cover"
+            alt="Logo"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="flex items-end space-x-10 w-full md:w-fit">
+          <div class="hidden md:block text-center">
+            <div class="flex items-center justify-center ">
+              <img class="blink_me" src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
+              <p class="font-bold text-xl text-gray">Cấp cứu 24/7:</p>
             </div>
-            <div class="navbar-lang">
-              <img src="assets/img/Clip-path-group.png" alt="" />
+
+            <div class="text-xl text-[#EC1C24] font-bold">
+                <a href="tel:096 699 8126">096 699 8126 - </a>
+                <a href="tel:039 840 9559">039 840 9559</a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <img class="w-8" src="./assets/img/vietnam.png" alt="Vietnam" />
+            <img
+              class="w-8"
+              src="./assets/img/united-kingdom.png"
+              alt="united kingdom"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative z-10 hidden"
+      id="slide-over"
+      aria-labelledby="slide-over-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="fixed inset-0 bg-black/40 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            class="pointer-events-none fixed inset-y-0 left-0 flex max-w-full pr-14"
+          >
+            <div
+              class="pointer-events-auto relative w-screen max-w-md bg-white shadow-xl transition-transform transform -translate-x-full"
+              id="panel"
+            >
+              <div
+                class="absolute right-0 top-0 -mr-8 flex pl-2 pt-4 sm:-mr-10 sm:pl-4"
+              >
+                <button
+                  type="button"
+                  id="close-button"
+                  class="relative rounded-md text-gray-300 text-white focus:outline-none"
+                >
+                  <span class="absolute -inset-2.5"></span>
+                  <span class="sr-only">Close panel</span>
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex h-full flex-col overflow-y-scroll py-6">
+                <div class="px-4 sm:px-6">
+                  <div class="flex">
+                    <input
+                      class="h-10 border border-r-0 border-[#BBBDBF] rounded-s-full w-full px-4"
+                      type="text"
+                      placeholder="Tìm kiếm ..."
+                    />
+                    <button
+                      class="w-[50px] h-10 rounded-e-full bg-primary shrink-0 flex items-center justify-center"
+                    >
+                      <i class="size-5 text-white" data-lucide="search"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="relative mt-6 flex-1">
+                  <div class="flex flex-col">
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-y border-[#ececec]"
+                      href="./index.html"
+                      >Trang chủ</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="./introduce.html"
+                      >Giới thiệu</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
+                      href="./service.html"
+                      >Dịch vụ toàn diện</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/member.html"
+                      >Ưu đãi</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/news.html"
+                      >Kiến thức</a
+                    >
+                    <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                      href="/activity.html"
+                      >Hoạt động sự kiện</a
+                    >
+                  </div>
+
+                  <div class="mt-6 px-4 sm:px-6">
+                    <div class="flex items-center mb-2">
+                      <img
+                        src="./assets/img/8-8.png"
+                        class="w-8 h-6 mr-2"
+                        alt=""
+                      />
+                      <p class="font-bold md:text-xl text-gray">
+                        Cấp cứu 24/7:
+                      </p>
+                    </div>
+
+                    <div class="md:text-xl text-[#EC1C24] font-bold">
+                        <a href="tel:096 699 8126">096 699 8126 - </a>
+                        <a href="tel:039 840 9559">039 840 9559</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <nav class="navbar-menu">
-          <ul class="navbar-header">
-            <li class="navbar-item">
-              <a href="" class="nav link">Trang chủ </a>
-            </li>
-            <li class="navbar-item">
-              <a href="" class="nav link">Giới Thiệu </a>
-            </li>
-            <li class="navbar-item">
-              <a href="" class="nav link">Dịch vụ toàn diện </a>
-            </li>
-            <li class="navbar-item">
-              <a href="" class="nav link">Ưu đãi </a>
-            </li>
-            <li class="navbar-item">
-              <a href="" class="nav link">Kiến thức </a>
-            </li>
-            <li class="navbar-item">
-              <a href="" class="nav link">Hoạt động sự kiện </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content"></div>
-
-      <footer class="footer"></footer>
+      </div>
     </div>
-  </body>
+
+    <nav class="hidden md:block h-[83px] md:px-20">
+      <div
+        class="flex items-center justify-end w-full h-full mx-auto space-x-10"
+      >
+        <a
+          class="text-lg block cursor-pointer text-primary font-bold"
+          href="./index.html"
+          >Trang chủ</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="./introduce.html"
+          >Giới thiệu</a
+        >
+        <div class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold">
+          <button onclick="myFunction()" class="dropbtn">Dịch vụ toàn diện</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-items" href="#">Cấp cứu 24/24</a>
+            <a class="dropdown-items" href="#">Phẫu thuật ngoại khoa</a>
+            <a class="dropdown-items" href="#">Khám chữa bệnh và tiêm phòng</a>
+            <a class="dropdown-items" href="#">Tắm sấy, Spa và Cắt tỉa</a>
+            <a class="dropdown-items" href="#">Siêu Âm, X-quang, Xét nghiệm</a>
+            <a class="dropdown-items" href="#">Triệt sản chó mèo</a>
+            <a class="dropdown-items" href="#">Dịch vụ đưa đón tại nhà</a>
+            <a href="#">Khách sạn thú cưng</a>
+          </div>
+        </div>
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="./member.html"
+          >Ưu đãi</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="./news.html"
+          >Kiến thức</a
+        >
+        <a
+          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          href="./activity.html"
+          >Hoạt động sự kiện</a
+        >
+
+        <div class="relative">
+          <input class="border border-gray px-2 h-[26px]" type="text" />
+          <i class="absolute top-1 right-1 size-5" data-lucide="search"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="owl-carousel" id="slide-3">
+          <img src="assets/img/top.png" alt="Image 1">
+          <img src="assets/img/top-1.png" alt="Image 2">
+          <img src="assets/img/top-2.png" alt="Image 3">
+      </div>
+    </div>
+        <!-- <img class="img-service" data-aos="zoom-in-down" data-aos-duration="1000" src="assets/img/top.png" alt="các dịch vụ dành cho thú cưng của bạn">
+        <img class="img-service-mb" src="assets/img/background-2.png" alt="Các dịch vụ dành cho thú cưng của bạn"> -->
+        <div class="content">
+            <div class="rule">
+                <div class="rule-border">
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="video  introduce-size" data-aos="fade-right" data-aos-duration="1000">
+                    <video width="100%" height="100%" controls>
+                        <source src="assets/img/B.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="introduce-detail introduce-size" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="introduce-detail-h3">Giới thiệu 2Vet Bình Thạnh</h3>
+                    <p class="introduce-detail-p">2Vet Bình Thạnh là Bệnh viện Thú Y Đa khoa 
+                      trong Khám, Chữa, Phẫu thuật chuyên sâu, spa làm đẹp, khách sạn uy tín 
+                      dành cho Thú cưng. Với đội ngũ chuyên gia - Bác sĩ hàng đầu, trang thiết 
+                      bị hiện đại, cùng các hoạt động điều trị hiệu quả, khoa học, chúng tôi 
+                      đảm bảo rằng mỗi cuộc khám bệnh đều được thực hiện một cách an toàn,  
+                      chính xác và hiệu quả nhất với chi phí hợp lý. </p>    
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="rule-service">
+                <div class="rule-border">
+                </div>
+            </div>
+            <div class="service-content">
+                <h3 class="introduce-detail-h3">Dịch vụ toàn diện
+                </h3>
+                <p class="introduce-detail-p">Đảm bảo thú cưng của bạn có cuộc sống dài lâu và khỏe mạnh với các <br> dịch vụ toàn diện và phương pháp 
+                    y khoa tiện tiến nhất.</p>
+            </div>
+            <div class="service-detail max-w-screen-xl mx-auto nt-5 md:mt-10 md:px-0">
+                <div class="service-detail-items owl-carousel owl-theme" id="slide-1">
+                    <div class="service-items item">
+                        <img class="img-service-detail" src="assets/img/service-8.png" alt="">
+                        <p class="hidden-mb">Cấp Cứu Thú Cưng 24/24</p>
+                    </div>
+                    <div class="service-items item" >
+                        <img class="img-service-detail" src="assets/img/service-2.png" alt="">
+                        <p class="hidden-mb">Phẫu Thuật Ngoại Khoa</p>
+                    </div>
+                    <div class="service-items item" > 
+                      <img class="img-service-detail" src="assets/img/tiemphong.jpg" alt="">
+                      <p class="hidden-mb">Tiêm Phòng Vaccine</p>
+                    </div>
+                    <div class="service-items item" >
+                        <img class="img-service-detail" src="assets/img/service-3.png" alt="">
+                        <p class="hidden-mb">Khám chữa bệnh và tiêm phòng</p>
+                    </div>
+                    <div class="service-items item" >
+                        <img class="img-service-detail" src="assets/img/service-4.png" alt="">
+                        <p class="hidden-mb">Tắm Sấy, Spa & Cắt Tỉa</p>
+                    </div>
+                    <div class="service-items item" >
+                      <img class="img-service-detail" src="assets/img/service-6.png" alt="">
+                      <p class="hidden-mb">Siêu Âm, X-Quang, Xét Nghiệm</p>
+                    </div>
+                    <div class="service-items item" >
+                        <img class="img-service-detail" src="assets/img/service-5.png" alt="">
+                        <p class="hidden-mb">Triệt Sản Chó Mèo</p>
+                    </div>
+                    <div class="service-items item" >
+                        <img class="img-service-detail" src="assets/img/service-1.png" alt="">
+                        <p class="hidden-mb">Dịch Vụ Đưa & Đón Tại Nhà</p>
+                    </div>
+                    <div class="service-items item" > 
+                      <img class="img-service-detail" src="assets/img/service-7.png" alt="">
+                      <p class="hidden-mb">Khách Sạn Thú Cưng</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="hospital center">
+            <div class="rule">
+                <div class="rule-border">
+                </div>
+            </div>
+            <h3 class="introduce-detail-h3">Chuyên khoa trọng yếu</h3>
+            <div class="hospital-detail">
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/13.png" alt="Khoa ngoại">
+                    </div>
+                    <p class="hospital-text">KHOA NGOẠI</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/14.png" alt="Khoa tim mạch">
+                    </div>
+                    <p class="hospital-text">KHOA TIM MẠCH</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/16.png" alt="Khoa hồi sức cấp cứu">
+                    </div>
+                    <p class="hospital-text">KHOA HỒI SỨC CẤP CỨU</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/9.png" alt="Khoa huyết học và truyền máu">
+                    </div>
+                    <p class="hospital-text">KHOA HUYẾT HỌC VÀ TRUYỀN MÁU</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/10.png" alt="Khoa da liễu">
+                    </div>
+                    <p class="hospital-text">KHOA DA LIỄU</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/11.png" alt="Khoa chuẩn đoán hình ảnh">
+                    </div>
+                    <p class="hospital-text">KHOA CHẨN ĐOÁN HÌNH ẢNH</p>
+                </div>
+                <div class="hospital-detail-items" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="hospital-items">
+                        <img class="hospital-items-detail" src="assets/img/12.png" alt="Khoa nội">
+                    </div>
+                    <p class="hospital-text">KHOA NỘI</p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <div class="rule-service">
+                <div class="rule-border">
+                </div>
+            </div>
+            <h3 class="introduce-detail-h3">Đội ngũ chuyên gia & Bác sĩ</h3>
+            <p class="introduce-detail-p">Quy tụ đội ngũ có trình độ chuyên môn cao, giàu 
+                kinh  có nhiều năm công tác, <br> thường xuyên hợp tác cùng các chuyên gia hàng 
+                đầu trong và ngoài nước.</p>
+            <div class="member-group">
+                <div class="member-detail-1 member-detail" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="member-content">
+                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
+                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                    </div>
+                </div>
+                <div class="member-detail-2 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="member-content">
+                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
+                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                    </div>
+                </div>
+                <div class="member-detail-3 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="member-content">
+                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
+                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                    </div>
+                </div>
+                <div class="member-detail-4 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="member-content">
+                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
+                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>    
+          <div class="mt-4 text-center">
+            <div class="rule bg-white">
+              <div class="rule-border">
+              </div>
+          </div>
+            <h4 class="introduce-detail-h3">Ưu đãi</h4>
+          </div>
+        </div>
+    
+        <div class="max-w-screen-xl mx-auto nt-5 md:mt-10 px-4 md:px-0">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme" id="slide-2">
+            <div class="rounded-lg p-[10px] bg-white group">
+              <div class="rounded-lg overflow-hidden h-56">
+                <img
+                  class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+                  src="./assets/img/birthday.png"
+                  alt=""
+                />
+              </div>
+    
+              <div>
+                <h2
+                  class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
+                >
+                  Đại tiệc sinh nhật 13 tuối - 2VET dành tặng quý khách ưu đãi lớn
+                </h2>
+                <p class="text-sm text-gray line-clamp-3">
+                  Nhân dịp kỷ niệm 13 năm thành lập, Hệ thống thú y 2Vet mang đến
+                  những ưu đãi hấp dẫn nhất từ trước tới nay, tri ân quý khách hàng
+                  đã tin tưởng và đồng hành cùng chúng tôi suốt...
+                </p>
+              </div>
+    
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center">
+                  <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+                  <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+                </div>
+    
+                <button
+                  class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+    
+            <div class="rounded-lg p-[10px] bg-white group">
+              <div class="rounded-lg overflow-hidden h-56">
+                <img
+                  class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+                  src="./assets/img/discount.jpg"
+                  alt=""
+                />
+              </div>
+    
+              <div>
+                <h2
+                  class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
+                >
+                  Chương trình ưu đãi đặt lịch qua app Miniapp 2VET
+                </h2>
+                <p class="text-sm text-gray line-clamp-3">
+                  Hệ thống bệnh viện thú y 2Vet mang đến cơ hội không thể bỏ lỡ dành
+                  cho tất cả chủ nuôi. Chỉ cần đặt lịch thành công qua Miniapp 2Vet,
+                  bạn sẽ nhận được GIẢM NGAY 10% – TỐI ĐA...
+                </p>
+              </div>
+    
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center">
+                  <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+                  <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+                </div>
+    
+                <button
+                  class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+    
+            <div class="rounded-lg p-[10px] bg-white group">
+              <div class="rounded-lg overflow-hidden h-56">
+                <img
+                  class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+                  src="./assets/img/gift.png"
+                  alt=""
+                />
+              </div>
+    
+              <div>
+                <h2
+                  class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
+                >
+                  Chương trình tháng kỷ niệm thành viên 2VET - Ưu đãi hấp dẫn dành
+                  cho khách hàng!
+                </h2>
+                <p class="text-sm text-gray line-clamp-3">
+                  Để tri ân sự ủng hộ và đồng hành của quý khách hàng, 2Vet mang đến
+                  chương trình tháng kỷ niệm thành viên 2Vet với những voucher hấp
+                  dẫn dành cho tất cả khách hàng sở hữu thẻ thành viên....
+                </p>
+              </div>
+    
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center">
+                  <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+                  <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+                </div>
+    
+                <button
+                  class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+    
+            <div class="rounded-lg p-[10px] bg-white group">
+              <div class="rounded-lg overflow-hidden h-56">
+                <img
+                  class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+                  src="./assets/img/birthday-bt.png"
+                  alt=""
+                />
+              </div>
+    
+              <div>
+                <h2
+                  class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
+                >
+                  Mừng sinh nhật 2VET Bình Thạnh - Ưu đãi chưa từng có
+                </h2>
+                <p class="text-sm text-gray line-clamp-3">
+                  Mừng 2Vet Bình Thạnh tròn 1 năm tuổi – Quà tặng ngập tràn dành cho
+                  Boss và Sen. Duy nhất chỉ trong 2 ngày từ 17-19/11/2024. Gói khám
+                  sức khỏe toàn diện chỉ còn 550.000đ (Giá gốc 1.100.000đ) Gói
+                  khám...
+                </p>
+              </div>
+    
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center">
+                  <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+                  <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+                </div>
+    
+                <button
+                  class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+    
+            <div class="rounded-lg p-[10px] bg-white group">
+              <div class="rounded-lg overflow-hidden h-56">
+                <img
+                  class="group-hover:scale-110 transition-transform duration-300 ease-linear w-full h-full object-cover"
+                  src="./assets/img/year-birthday.png"
+                  alt=""
+                />
+              </div>
+    
+              <div>
+                <h2
+                  class="my-3 text-gray text-xl line-clamp-2 font-semibold group-hover:text-[#e37b00] duration-300 ease-linear transition-colors"
+                >
+                  Bệnh viện thú y 2VET Bình Thạnh - Kỷ niệm một năm thành lập
+                </h2>
+                <p class="text-sm text-gray line-clamp-3">
+                  Ngày 18/11/2024, Bệnh viện Thú y 2Vet Bình Thạnh hân hoan đánh dấu
+                  một cột mốc đáng nhớ – kỷ niệm 1 năm thành lập. Trong suốt hành
+                  trình này, 2Vet Bình Thạnh đã nỗ lực không ngừng để cung...
+                </p>
+              </div>
+    
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center">
+                  <i class="fa-regular fa-calendar-days mr-2 text-[#BBBDBF]"></i>
+                  <p class="text-[#BBBDBF] text-sm">02/12/2024</p>
+                </div>
+    
+                <button
+                  class="text-gray text-sm hover:text-primary duration-200 ease-linear transition-colors"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="finish">
+            <div class="rule">
+                <div class="rule-border">
+                </div>
+            </div>
+            <h3 class="introduce-detail-h3">Thành tích đạt được</h3>
+            <div class="finish-content">
+                <div class="finish-items" data-aos="fade-right" data-aos-duration="1000">
+                    <img class="finish-title" src="assets/img/finish-1.png" alt="">
+                    
+                    <p class="title-detail">+10 NĂM KINH NGHIỆM</p>
+                </div>
+                <div class="finish-items" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <img class="finish-title" src="assets/img/finish-2.png" alt="">
+                    
+                    <p class="title-detail">+300K CA PHỤC HỒI THÀNH CÔNG</p>
+                </div>
+                <div class="finish-items" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <img class="finish-title" src="assets/img/finish-3.png" alt="">
+                    
+                    <p class="title-detail">+55 NHÀ PHÂN PHỐI UY TÍN</p>
+                </div>
+            </div>
+            <div class="icon-button">
+                <img src="assets/img/24.png" alt="">
+            </div>
+        </div>
+        <div class="center">
+            <div class="register">
+                <div class="register-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                    <h1>ĐẶT LỊCH HẸN</h1>
+                </div>
+                <div class="center center-font">
+                    <div class="form" data-aos="fade-right" data-aos-duration="1000">
+                        <input class="form-size" type="text" name="name" placeholder="Tên của bạn*">
+                    </div>
+                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        <input class="form-size" type="tel" name="phone" placeholder="Số điện thoại của bạn*">
+                    </div>
+                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <label for="Địa chỉ">Địa chỉ:</label>
+                        <select class="form-size select-size" type="text" name="name" id="" p>
+                            <option class="option" value="text">128 Chu Văn An, Phường 26, Quận Bình Thạnh</option>
+                        </select>
+                    </div>
+                    <div class="time" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" >
+                        <div class="date">
+                            <label for="date">Ngày hẹn*</label>
+                            <input class="time-size" type="date">
+                        </div>
+                        <div class="time-detail date">
+                            <label for="time">Thời gian:</label>
+                            <input class="time-size" type="time" name="time">
+                        </div>
+                    </div>
+                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        <label for="service">Dịch vụ yêu cầu</label>
+                        <select class="form-size" name="" id="" p>
+                            <option class="option"  value="text">Tiêm Phòng</option>
+                            <option  class="option" value="text">Làm Đẹp</option>
+                        </select>
+                    </div>
+                    <button class="register-button" data-aos="fade-up" data-aos-duration="1000">
+                        GỬI THÔNG TIN
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="fixed z-10 bottom-20 right-10">
+            <div class="flex flex-col items-center">
+              <div class="hidden md:block relative">
+                <div
+                  class="absolute w-14 h-14 rounded-[50%] bg-[#3788e5d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+                  style="box-shadow: 0 0 0px 0px #3788e5cc"
+                ></div>
+      
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#3788e5] flex items-center justify-center"
+                >
+                  <a href="https://www.facebook.com/messages/t/1314450995318313">
+                    <i class="fa-brands fa-facebook-messenger fa-xl text-white"></i>
+                  </a>
+                </div>
+              </div>
+      
+              <div class="hidden md:block relative mt-[70px]">
+                <div
+                  class="absolute w-14 h-14 rounded-[50%] bg-[#2196f3] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+                  style="box-shadow: 0 0 0px 0px #2196f3b3"
+                ></div>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center"
+                >
+                  <a href="https://zalo.me/2245541923591365440">
+                    <p class="text-white font-bold text-sm">Zalo</p>
+                  </a>
+                </div>
+              </div>
+      
+              <div class="relative mt-[70px]">
+                <div
+                  class="absolute w-14 h-14 rounded-[50%] bg-rose-500 -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+                  style="box-shadow: 0 0 0px 0px #fb7186d4"
+                ></div>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-rose-600 flex items-center justify-center"
+                >
+                  <a href="tel:096 699 8126">
+                    <i class="fa-solid fa-phone fa-xl text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
+            <div class="max-w-screen-xl mx-auto px-4 md:px-0">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
+                <div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0068125891016!2d106.7055401758953!3d10.810789589340086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1734757361995!5m2!1sen!2s"
+                    width="100%"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+      
+                <div>
+                  <h2 class="text-white font-bold text-2xl">
+                    Hãy ghé thăm chúng tôi ngay hôm nay!
+                  </h2>
+      
+                  <div class="my-3 text-[#344A5F]">
+                    <p class="text-sm font-medium">
+                      Địa chỉ: 128 Chu Văn An, phường 26, Quận Bình Thạnh
+                    </p>
+                    <p class="text-sm font-medium my-1">
+                      Emial: contact.2vet@gmail.com
+                    </p>
+                    <p class="text-sm font-medium">Hotline: 098 616 8126</p>
+                  </div>
+      
+                  <div class="flex items-center space-x-8">
+                    <div
+                      class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+                    >
+                      <i class="fa-brands fa-facebook-f text-white"></i>
+                    </div>
+      
+                    <div
+                      class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+                    >
+                      <i class="fa-brands fa-tiktok text-white"></i>
+                    </div>
+      
+                    <div
+                      class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+                    >
+                      <i class="fa-brands fa-youtube text-white"></i>
+                    </div>
+      
+                    <div
+                      class="w-9 h-9 flex items-center justify-center rounded-full border border-white"
+                    >
+                      <p class="text-xs font-bold text-white">Zalo</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div>
+                  <h2 class="text-2xl text-white font-bold">Thời gian làm việc</h2>
+      
+                  <div class="mt-3 text-[#344A5F]">
+                    <p class="text-sm font-medium">Thời gian làm việc: 8h00 - 21h00</p>
+                    <p class="text-sm font-medium my-1">
+                      Trực cấp cứu 24/24: Từ 21h00
+                    </p>
+                    <p class="text-sm font-medium">Làm việc cả Lễ, Tết</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const slideOver = document.getElementById('slide-over');
+        const panel = document.getElementById('panel');
+        const openButton = document.getElementById('open-button');
+        const closeButton = document.getElementById('close-button');
+
+        function openSlideOver() {
+          slideOver.classList.remove('hidden');
+          panel.classList.remove('-translate-x-full');
+          panel.classList.add('translate-x-0');
+        }
+
+        function closeSlideOver() {
+          panel.classList.remove('translate-x-0');
+          panel.classList.add('-translate-x-full');
+          setTimeout(() => {
+            slideOver.classList.add('hidden');
+          }, 300);
+        }
+
+        openButton.addEventListener('click', openSlideOver);
+        closeButton.addEventListener('click', closeSlideOver);
+
+        slideOver.addEventListener('click', (e) => {
+          if (e.target === slideOver) {
+            closeSlideOver();
+          }
+        });
+      });
+      $(document).ready(function () {
+        $("#slide-2").owlCarousel({
+          center: true,
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 3,
+              nav: false,
+            },
+          },
+        });
+        $("#slide-1").owlCarousel({
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 3,
+              nav: false,
+            },
+          },
+        });
+        $("#slide-3").owlCarousel({
+          center: true,
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 1,
+              nav: false,
+            },
+          },
+        });
+      });
+      
+    </script>
+</body>
+
 </html>

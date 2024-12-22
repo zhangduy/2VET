@@ -48,7 +48,12 @@
         <div class="flex items-end space-x-10 w-full md:w-fit">
           <div class="hidden md:block text-center">
             <div class="flex items-center justify-center">
-              <img src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
+              <img
+                class="blink_me"
+                src="./assets/img/8-8.png"
+                class="w-8 h-6 mr-2"
+                alt=""
+              />
               <p class="font-bold text-xl text-gray">Cấp cứu 24/7:</p>
             </div>
 
@@ -134,27 +139,27 @@
                   <div class="flex flex-col">
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-y border-[#ececec]"
-                      href="/"
+                      href="./index.html"
                       >Trang chủ</a
                     >
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
-                      href="/"
+                      href="./introduce.html"
                       >Giới thiệu</a
                     >
                     <a
-                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
-                      href="/service.html"
+                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
+                      href="./service.html"
                       >Dịch vụ toàn diện</a
                     >
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
-                      href="./member.html"
+                      href="/member.html"
                       >Ưu đãi</a
                     >
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
-                      href="./news.html"
+                      href="/news.html"
                       >Kiến thức</a
                     >
                     <a
@@ -194,19 +199,31 @@
       >
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="/"
+          href="./index.html"
           >Trang chủ</a
         >
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="#"
+          href="./introduce.html"
           >Giới thiệu</a
         >
-        <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
-          href="/service.html"
-          >Dịch vụ toàn diện</a
+        <div
+          class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
         >
+          <button onclick="myFunction()" class="dropbtn">
+            Dịch vụ toàn diện
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-items" href="#">Cấp cứu 24/24</a>
+            <a class="dropdown-items" href="#">Phẫu thuật ngoại khoa</a>
+            <a class="dropdown-items" href="#">Khám chữa bệnh và tiêm phòng</a>
+            <a class="dropdown-items" href="#">Tắm sấy, Spa và Cắt tỉa</a>
+            <a class="dropdown-items" href="#">Siêu Âm, X-quang, Xét nghiệm</a>
+            <a class="dropdown-items" href="#">Triệt sản chó mèo</a>
+            <a class="dropdown-items" href="#">Dịch vụ đưa đón tại nhà</a>
+            <a href="#">Khách sạn thú cưng</a>
+          </div>
+        </div>
         <a
           class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./member.html"
@@ -229,10 +246,14 @@
         </div>
       </div>
     </nav>
-
+    <div class="slider">
+      <div class="owl-carousel" id="slide-3">
+        <img src="assets/img/top.png" alt="Image 1" />
+        <img src="assets/img/top-1.png" alt="Image 2" />
+        <img src="assets/img/top-2.png" alt="Image 3" />
+      </div>
+    </div>
     <div>
-      <img class="block" src="./assets/img/bg-news.png" alt="BG" />
-
       <div class="mt-4 text-center">
         <div class="border border-primary w-32 mb-2 mx-auto"></div>
         <h4 class="text-2xl font-bold text-gray">Kiến thức</h4>
@@ -240,7 +261,10 @@
     </div>
 
     <div class="max-w-screen-xl mx-auto nt-5 md:mt-10 px-4 md:px-0">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme"
+        id="slide-1"
+      >
         <div class="rounded-lg p-[10px] bg-white group">
           <div class="rounded-lg overflow-hidden h-56">
             <img
@@ -515,7 +539,6 @@
         </form>
       </div>
     </div>
-
     <div class="fixed z-10 bottom-20 right-10">
       <div class="flex flex-col items-center">
         <div class="hidden md:block relative">
@@ -562,13 +585,13 @@
         </div>
       </div>
     </div>
-
+    <<<<<<< HEAD ======= >>>>>>> master
     <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
       <div class="max-w-screen-xl mx-auto px-4 md:px-0">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0067437664393!2d106.70554017585383!3d10.810794858557157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1733451165135!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0068125891016!2d106.7055401758953!3d10.810789589340086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1734757361995!5m2!1sen!2s"
               width="100%"
               height="200"
               style="border: 0"
@@ -690,7 +713,7 @@
       });
 
       $(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
+        $('#slide-1').owlCarousel({
           center: true,
           loop: true,
           margin: 70,
@@ -708,7 +731,45 @@
             },
           },
         });
+        $('#slide-3').owlCarousel({
+          center: true,
+          loop: true,
+          margin: 70,
+          responsiveClass: true,
+          dots: true,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              margin: 20,
+            },
+            768: {
+              items: 1,
+              nav: false,
+            },
+          },
+        });
       });
+    </script>
+    <script src="script.js"></script>
+    <script>
+      function myFunction() {
+        document.getElementById('myDropdown').classList.toggle('show');
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName('dropdown-content');
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      };
     </script>
   </body>
 </html>
