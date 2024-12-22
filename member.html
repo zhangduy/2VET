@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/vinh.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body class="font-primary">
     <div class="h-8 md:h-[63px] w-full bg-primary"></div>
@@ -48,7 +49,12 @@
         <div class="flex items-end space-x-10 w-full md:w-fit">
           <div class="hidden md:block text-center">
             <div class="flex items-center justify-center">
-              <img class="blink_me" src="./assets/img/8-8.png" class="w-8 h-6 mr-2" alt="" />
+              <img
+                class="blink_me"
+                src="./assets/img/8-8.png"
+                class="w-8 h-6 mr-2"
+                alt=""
+              />
               <p class="font-bold text-xl text-gray">Cấp cứu 24/7:</p>
             </div>
 
@@ -202,8 +208,12 @@
           href="./introduce.html"
           >Giới thiệu</a
         >
-        <div class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold">
-          <button onclick="myFunction()" class="dropbtn">Dịch vụ toàn diện</button>
+        <div
+          class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+        >
+          <button onclick="myFunction()" class="dropbtn">
+            Dịch vụ toàn diện
+          </button>
           <div id="myDropdown" class="dropdown-content">
             <a class="dropdown-items" href="#">Cấp cứu 24/24</a>
             <a class="dropdown-items" href="#">Phẫu thuật ngoại khoa</a>
@@ -239,14 +249,12 @@
     </nav>
     <div class="slider">
       <div class="owl-carousel" id="slide-2">
-          <img src="assets/img/top.png" alt="Image 1">
-          <img src="assets/img/top-1.png" alt="Image 2">
-          <img src="assets/img/top-2.png" alt="Image 3">
+        <img src="assets/img/top.png" alt="Image 1" />
+        <img src="assets/img/top-1.png" alt="Image 2" />
+        <img src="assets/img/top-2.png" alt="Image 3" />
       </div>
     </div>
     <div>
-      
-
       <div class="mt-4 text-center">
         <div class="border border-primary w-32 mb-2 mx-auto"></div>
         <h4 class="text-2xl font-bold text-gray">Ưu đãi</h4>
@@ -254,7 +262,10 @@
     </div>
 
     <div class="max-w-screen-xl mx-auto nt-5 md:mt-10 px-4 md:px-0">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme" id="slide-1">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-4 owl-carousel owl-theme"
+        id="slide-1"
+      >
         <div class="rounded-lg p-[10px] bg-white group">
           <div class="rounded-lg overflow-hidden h-56">
             <img
@@ -457,13 +468,18 @@
           </h1>
         </div>
 
-        <form class="px-4 md:px-10 pt-5 md:pt-10">
+        <form
+          id="my-form"
+          class="px-4 md:px-10 pt-5 md:pt-10"
+          method="post"
+          action="https://script.google.com/macros/s/AKfycbyny0zp04meIMiG87K4y5LdTln43WBessOGgR0jg9o495ifg5ARokr4baP9x4PrvG_4YQ/exec"
+        >
           <div class="flex flex-col space-y-8">
             <div>
               <input
                 class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                 type="text"
-                name="name"
+                name="Name"
                 placeholder="Tên của bạn*"
                 required
               />
@@ -473,7 +489,7 @@
               <input
                 class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                 type="tel"
-                name="phone"
+                name="Phone"
                 placeholder="Số điện thoại của bạn*"
                 required
               />
@@ -486,8 +502,7 @@
               <input
                 class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                 type="text"
-                name="address"
-                placeholder="Địa chỉ của bạn*"
+                name="Address"
                 value="128 Chu Văn An, Phường 26, Quận Bình Thạnh"
                 required
               />
@@ -501,7 +516,7 @@
                 <input
                   class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                   type="date"
-                  name="date"
+                  name="Date of service"
                   required
                 />
               </div>
@@ -513,7 +528,7 @@
                 <input
                   class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                   type="time"
-                  name="time"
+                  name="Time of service"
                 />
               </div>
             </div>
@@ -525,7 +540,7 @@
               <input
                 class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
                 type="text"
-                name="service"
+                name="Service"
                 placeholder="Tiêm phòng"
               />
             </div>
@@ -539,6 +554,33 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div
+      id="loading"
+      class="fixed top-0 left-0 w-full h-full bg-black/50 z-50 hidden"
+    >
+      <div class="flex items-center justify-center w-full h-full">
+        <div role="status">
+          <svg
+            aria-hidden="true"
+            class="inline w-8 h-8 text-slate-200 animate-spin fill-yellow-400"
+            viewBox="0 0 100 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor"
+            />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill"
+            />
+          </svg>
+          <span class="sr-only">Loading...</span>
+        </div>
       </div>
     </div>
 
@@ -594,7 +636,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
           <div>
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0068125891016!2d106.7055401758953!3d10.810789589340086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1734757361995!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0068125891016!2d106.7055401758953!3d10.810789589340086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289628c4e517%3A0x78cda3730ed7367b!2zMTI4IENodSBWxINuIEFuLCBQaMaw4budbmcgMjYsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1734757361995!5m2!1sen!2s"
               width="100%"
               height="200"
               style="border: 0"
@@ -690,6 +732,7 @@
         const panel = document.getElementById('panel');
         const openButton = document.getElementById('open-button');
         const closeButton = document.getElementById('close-button');
+        const loading = document.getElementById('loading');
 
         function openSlideOver() {
           slideOver.classList.remove('hidden');
@@ -713,10 +756,26 @@
             closeSlideOver();
           }
         });
+
+        const form = document.getElementById('my-form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          loading.classList.remove('hidden');
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          }).then(() => {
+            loading.classList.add('hidden');
+            form.reset();
+            alert('Đã gửi thành công!');
+          });
+        });
       });
 
       $(document).ready(function () {
-        $("#slide-1").owlCarousel({
+        $('#slide-1').owlCarousel({
           center: true,
           loop: true,
           margin: 70,
@@ -736,7 +795,7 @@
         });
       });
       $(document).ready(function () {
-        $("#slide-2").owlCarousel({
+        $('#slide-2').owlCarousel({
           center: true,
           loop: true,
           margin: 70,
@@ -759,15 +818,13 @@
     </script>
     <script src="script.js"></script>
     <script>
-
       function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById('myDropdown').classList.toggle('show');
       }
-      
 
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var dropdowns = document.getElementsByClassName('dropdown-content');
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
@@ -776,7 +833,7 @@
             }
           }
         }
-      }
-      </script>
+      };
+    </script>
   </body>
 </html>
