@@ -10,6 +10,7 @@ module.exports = {
       boxShadow: {
         card: '0 4px 6px 2px rgb(0 0 0 / 10%)',
         animate: '0 0 0px 0px #3788e5cc',
+        activity: '7px 7px 10px 0 rgba(196, 196, 196, 0.75)',
       },
       backgroundImage: {
         linear: 'linear-gradient(to right, #FBC926, #FF8A00)',
