@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/vinh.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body class="font-primary">
     <div class="h-8 md:h-[63px] w-full bg-primary"></div>
@@ -141,11 +142,24 @@
                       href="./introduce.html"
                       >Giới thiệu</a
                     >
-                    <a
+                    <div class="dropdown-1 text-lg block cursor-pointer border-b border-[#ececec] hover:text-primary transition-all text-gray font-bold">
+                      <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
                       href="./service.html"
                       >Dịch vụ toàn diện</a
                     >
+                      <div id="myDropdown1" class="dropdown-content1">
+                        <a class="dropdown-items1" href="./service.html">Cấp cứu 24/24</a>
+                        <a class="dropdown-items1" href="./service.html">Phẫu thuật ngoại khoa</a>
+                        <a class="dropdown-items1" href="./service.html">Khám chữa bệnh và tiêm phòng</a>
+                        <a class="dropdown-items1" href="./service.html">Tắm sấy, Spa và Cắt tỉa</a>
+                        <a class="dropdown-items1" href="./service.html">Siêu Âm, X-quang, Xét nghiệm</a>
+                        <a class="dropdown-items1" href="./service.html">Triệt sản chó mèo</a>
+                        <a class="dropdown-items1" href="./service.html">Dịch vụ đưa đón tại nhà</a>
+                        <a class="dropdown-items-2"href="./service.html">Khách sạn thú cưng</a>
+                      </div>
+                    </div>
+                    
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
                       href="./member.html"
@@ -192,32 +206,44 @@
         class="flex items-center justify-end w-full h-full mx-auto space-x-10"
       >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="/index.html"
           >Trang chủ</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./introduce.html"
           >Giới thiệu</a
         >
+        <div class="dropdown text-xl block cursor-pointer text-primary transition-all text-gray font-bold">
+          <a  class="dropbtn-1 text-xl block cursor-pointer text-primary font-bold"
+                        href="./service.html"
+                        >Dịch vụ toàn diện
+                      </a>            
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-items" href="#">Cấp Cứu 24/24</a>
+            <a class="dropdown-items" href="#">Khám Định Kỳ/Tổng Quát</a>
+            <a class="dropdown-items" href="#">Tiêm Phòng Vaccine</a>
+            <a class="dropdown-items" href="#">Phẫu Thuật Ngoại Khoa</a>
+            <a class="dropdown-items" href="#">Tắm sấy, Spa Và Cắt Tỉa</a>
+            <a class="dropdown-items" href="#">Siêu Âm, X-quang, Xét nghiệm</a>
+            <a class="dropdown-items" href="#">Triệt Sản Chó Mèo</a>
+            <a class="dropdown-items" href="#">Dịch Vụ Đưa Đón Tại Nhà</a>
+            <a href="#">Khách Sạn Thú Cưng</a>
+          </div>
+        </div>
         <a
-          class="text-lg block cursor-pointer text-primary font-bold"
-          href="/service.html"
-          >Dịch vụ toàn diện</a
-        >
-        <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./member.html"
           >Ưu đãi</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./news.html"
           >Kiến thức</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./activity.html"
           >Hoạt động sự kiện</a
         >
@@ -493,101 +519,72 @@
           <img src="./assets/img/TBW/8.png" alt="Trang thiết bị" />
         </div>
       </div>
-
-      <div class="my-10 md:px-10">
-        <div class="h-12 md:h-20 bg-[#E17B26] flex items-center px-6 md:px-10">
-          <h1 class="text-white text-lg md:text-4xl uppercase font-bold">
-            Đặt lịch hẹn
-          </h1>
-        </div>
-
-        <form class="px-4 md:px-10 pt-5 md:pt-10">
-          <div class="flex flex-col space-y-8">
-            <div>
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                type="text"
-                name="name"
-                placeholder="Tên của bạn*"
-                required
-              />
-            </div>
-
-            <div>
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                type="tel"
-                name="phone"
-                placeholder="Số điện thoại của bạn*"
-                required
-              />
-            </div>
-
-            <div>
-              <label for="address" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                >Địa chỉ:</label
-              >
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                type="text"
-                name="address"
-                placeholder="Địa chỉ của bạn*"
-                value="128 Chu Văn An, Phường 26, Quận Bình Thạnh"
-                required
-              />
-            </div>
-
-            <div class="flex items-center justify-between space-x-4">
-              <div class="w-full">
-                <label for="date" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                  >Ngày hẹn*:</label
-                >
-                <input
-                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                  type="date"
-                  name="date"
-                  required
-                />
+        <div class="center">
+          <div class="register" id="register">
+              <div class="register-title">
+                  <h1>ĐẶT LỊCH HẸN</h1>
               </div>
-
-              <div class="w-full">
-                <label for="time" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                  >Thời gian:</label
-                >
-                <input
-                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                  type="time"
-                  name="time"
-                />
+              <div class="center center-font">
+                  <div class="form">
+                      <input class="form-size" type="text" name="name" placeholder="Tên của bạn*">
+                  </div>
+                  <div class="form" data-aos-delay="100">
+                      <input class="form-size" type="tel" name="phone" placeholder="Số điện thoại của bạn*">
+                  </div>
+                  <div class="form" data-aos-delay="200">
+                      <label for="Địa chỉ">Địa chỉ:</label>
+                      <select class="form-size select-size" type="text" name="name" id="" p>
+                          <option class="option" value="text">128 Chu Văn An, Phường 26, Quận Bình Thạnh</option>
+                      </select>
+                  </div>
+                  <div class="time" data-aos-delay="300" >
+                      <div class="date">
+                          <label for="date">Ngày hẹn*</label>
+                          <input class="time-size" type="date">
+                      </div>
+                      <div class="date">
+                          <label for="time">Thời gian:</label>
+                          <input class="time-size" type="time">
+                      </div>
+                  </div>
+                  <div class="form" data-aos-delay="400">
+                      <label for="service">Dịch vụ yêu cầu</label>
+                      <select class="form-size" name="" id="" p>
+                          <option class="option"  value="text">Cấp Cứu 24/24</option>
+                          <option  class="option" value="text">Khám Định Kỳ/ Tổng Quát</option>
+                          <option  class="option" value="text">Tiêm Phòng Vaccine</option>
+                          <option  class="option" value="text">Phẫu Thuật Ngoại Khoa</option>
+                          <option  class="option" value="text">Tắm Sấy, Spa và Cắt Tỉa</option>
+                          <option  class="option" value="text">Siêu Âm, X-Quang, Xét Nghiệm</option>
+                          <option  class="option" value="text">Triệt Sản Chó Mèo</option>
+                          <option  class="option" value="text">Dịch Vụ Đưa Đón Tại Nhà</option>
+                          <option  class="option" value="text">Khách Sạn Thú Cưng</option>
+                      </select>
+                  </div>
+                  <button class="register-button" >
+                      GỬI THÔNG TIN
+                  </button>
               </div>
-            </div>
-
-            <div>
-              <label for="service" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                >Dịch vụ yêu cầu:</label
-              >
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                type="text"
-                name="service"
-                placeholder="Tiêm phòng"
-              />
-            </div>
-
-            <div class="text-center">
-              <button
-                class="uppercase h-10 font-bold md:text-xl text-white bg-[#E17B26] px-4 rounded-lg"
-              >
-                Gửi thông tin
-              </button>
-            </div>
           </div>
-        </form>
       </div>
     </div>
     <div class="fixed z-10 bottom-20 right-10">
       <div class="flex flex-col items-center">
-        <div class="hidden md:block relative">
+        <div class=" relative">
+          <div
+            class="absolute w-14 h-14 rounded-[50%] bg-[#eebc34d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+            style="box-shadow: 0 0 0px 0px #eebc34d9"
+          ></div>
+
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#e5b737] flex items-center justify-center"
+          >
+          <a href="#register">
+            <img src="assets/img/30.png" alt="">
+          </a>
+          </div>
+        </div>
+        <div class=" relative mt-[70px]">
           <div
             class="absolute w-14 h-14 rounded-[50%] bg-[#3788e5d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
             style="box-shadow: 0 0 0px 0px #3788e5cc"
@@ -602,7 +599,7 @@
           </div>
         </div>
 
-        <div class="hidden md:block relative mt-[70px]">
+        <div class="relative mt-[70px]">
           <div
             class="absolute w-14 h-14 rounded-[50%] bg-[#2196f3] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
             style="box-shadow: 0 0 0px 0px #2196f3b3"

@@ -109,11 +109,13 @@
 .introduce-size {
     width: 45%;
 }
+.introduce-img {
+
+}
 .video {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/4-1.png");
     background-size: auto auto;
     background-repeat: no-repeat;
 }
@@ -143,6 +145,9 @@
 }
 .service-content{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service-detail {
     display: flex;
@@ -159,7 +164,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     color: white;
     font-size: 15px;
@@ -216,7 +221,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 100%;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -232,27 +237,30 @@
 .member-detail-4{
     background-image: url("../img/group-4.png");
 }
+.member-detail-5{
+    background-image: url("../img/group-5.jpg");
+}
 .member-detail {display: flex;
     justify-content: center;
     align-items: end;
-    width: 24%;
-    height: 20vw;
+    width: 19%;
+    height: 18vw;
     background-repeat: no-repeat;
     background-size: 100% auto;
     border-radius: 10px;
-
 }
 .member-content {
     width: 90%;
     border-radius: 3px;
     background-color: var(--orange-color);
-    font-size: 11px;
+    font-size: 15px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5px 8px;
+    margin-bottom: 10px;
 }
 .case {
     display: flex;
@@ -431,6 +439,8 @@
 .date {
     width: 48%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 .time-size {
     width: 100%;
@@ -475,52 +485,6 @@
 .icon-footer {
     padding-top: 25px;
     display: flex;
-}
-.dropbtn {
-    background-color: transparent;
-    color: var(--text-color);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-.dropbtn:hover, .dropbtn:focus {
-    background-color: transparent;
-  }
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 99999;
-  }
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #8c601f;
-    min-width: 300px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.dropdown a:hover {
-    background-color: #ddd;
-}
-  
-.show {
-    display: block;
-}
-.dropdown-items{
-    border-bottom: 2px solid white;
 }
 .img-service-mb {
     display: none;
@@ -588,6 +552,13 @@
 .blink_me {
 	  animation: blinker 1s linear infinite;
 	}
+    .p-detail {
+        width: 60%;
+    }
+    html:focus-within {
+        scroll-behavior: smooth;
+        }
+        
 @keyframes blinker {
 	  50% {
 		opacity: 0;
@@ -597,6 +568,9 @@
     .hospital-detail-items {
         min-width: 25%;
         height: auto;
+    }
+    .member-content {
+        font-size: 10px;
     }
     .center-rule {
         margin-bottom: 20px;
@@ -610,12 +584,18 @@
         gap: 30px;
         padding-top: 2vw;
     }
-    
+    .p-detail {
+        width: 80%;
+    }
     .introduce-size {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .introduce-detail {
-        width: 70%;
+        width: 80%;
     }
     .introduce-detail-h3 {
         font-size: 30px;
@@ -627,10 +607,6 @@
     .sos {
         display: none;
     }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
     .img-service {
         display: none;
     }
@@ -639,6 +615,9 @@
     }
     .hospital-detail {
         width: 95%;
+    }
+    .hospital-text {
+        font-size: 16px ;
     }
     .hospital-detail-items {
         min-width: 30vw;
@@ -672,9 +651,14 @@
         margin-bottom: 2vw;
         justify-content: center;
     }
+    .member-content {
+        font-size: 10px;
+    }
     .member-group {
         flex-wrap: wrap;
-        width: 90%;        
+        width: 95%;   
+        justify-content: center;
+        gap: 10px;
     }
     .title-detail {
         font-size: 11px;
@@ -736,6 +720,25 @@
     .work-items {
         width: 45%;
         height: 21vw;
+    }
+    .time-size {
+        width: 100%;
+        border-radius: 8px;
+        border: 0.7px solid #BBBDBF;
+        padding: 10px 20px;
+        color: var(--text-color);
+    }
+    .finish-content {
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2vw;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .finish-items {
+        width: 30%;
     }
 }   
 

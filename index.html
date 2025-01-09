@@ -144,11 +144,24 @@
                       href="./introduce.html"
                       >Giới thiệu</a
                     >
-                    <a
-                      class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
+                    <div class="dropdown-1 text-base block cursor-pointer hover:text-primary transition-all text-gray font-bold border-b border-[#ececec]">
+                      <a
+                      class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
                       href="./service.html"
                       >Dịch vụ toàn diện</a
                     >
+                      <div id="myDropdown1" class="dropdown-content1"> 
+                        <a class="dropdown-items1" href="./service.html">Cấp Cứu 24/24</a>
+                        <a class="dropdown-items1" href="./service.html">Khám Định Kỳ/Tổng Quát</a>
+                        <a class="dropdown-items1" href="./service.html">Tiêm Phòng Vaccine</a>
+                        <a class="dropdown-items1" href="./service.html">Phẫu Thuật Ngoại Khoa</a>
+                        <a class="dropdown-items1" href="./service.html">Tắm Sấy, Spa và Cắt Tỉa</a>
+                        <a class="dropdown-items1" href="./service.html">Siêu Âm, X-quang, Xét Nghiệm</a>
+                        <a class="dropdown-items1" href="./service.html">Triệt Sản Chó Mèo</a>
+                        <a class="dropdown-items1" href="./service.html">Dịch Vụ Đưa Đón Tại Nhà</a>
+                        <a class="dropdown-items-2"href="./service.html">Khách Sạn Thú Cưng</a>
+                      </div>
+                    </div>
                     <a
                       class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
                       href="/member.html"
@@ -196,40 +209,45 @@
         class="flex items-center justify-end w-full h-full mx-auto space-x-10"
       >
         <a
-          class="text-lg block cursor-pointer text-primary font-bold"
+          class="text-xl block cursor-pointer text-primary font-bold"
           href="./index.html"
           >Trang chủ</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./introduce.html"
           >Giới thiệu</a
         >
-        <div class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold">
-          <button onclick="myFunction()" class="dropbtn">Dịch vụ toàn diện</button>
+        <div class="dropdown text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold">
+          <a  class="dropbtn-1 text-xl block cursor-pointer text-primary font-bold"
+                        href="./service.html"
+                        >Dịch vụ toàn diện
+                      </a>            
+          <!-- <button class="dropbtn">Dịch vụ toàn diện</button> -->
           <div id="myDropdown" class="dropdown-content">
-            <a class="dropdown-items" href="#">Cấp cứu 24/24</a>
-            <a class="dropdown-items" href="#">Phẫu thuật ngoại khoa</a>
-            <a class="dropdown-items" href="#">Khám chữa bệnh và tiêm phòng</a>
-            <a class="dropdown-items" href="#">Tắm sấy, Spa và Cắt tỉa</a>
+            <a class="dropdown-items" href="#">Cấp Cứu 24/24</a>
+            <a class="dropdown-items" href="#">Khám Định Kỳ/Tổng Quát</a>
+            <a class="dropdown-items" href="#">Tiêm Phòng Vaccine</a>
+            <a class="dropdown-items" href="#">Phẫu Thuật Ngoại Khoa</a>
+            <a class="dropdown-items" href="#">Tắm sấy, Spa Và Cắt Tỉa</a>
             <a class="dropdown-items" href="#">Siêu Âm, X-quang, Xét nghiệm</a>
-            <a class="dropdown-items" href="#">Triệt sản chó mèo</a>
-            <a class="dropdown-items" href="#">Dịch vụ đưa đón tại nhà</a>
-            <a href="#">Khách sạn thú cưng</a>
+            <a class="dropdown-items" href="#">Triệt Sản Chó Mèo</a>
+            <a class="dropdown-items" href="#">Dịch Vụ Đưa Đón Tại Nhà</a>
+            <a href="#">Khách Sạn Thú Cưng</a>
           </div>
         </div>
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./member.html"
           >Ưu đãi</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./news.html"
           >Kiến thức</a
         >
         <a
-          class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+          class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           href="./activity.html"
           >Hoạt động sự kiện</a
         >
@@ -260,7 +278,8 @@
                         <source src="assets/img/B.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="introduce-detail introduce-size" data-aos="fade-left" data-aos-duration="1000">
+                <div class="introduce-size">
+                  <div class="introduce-detail " data-aos="fade-left" data-aos-duration="1000">
                     <h3 class="introduce-detail-h3">Giới thiệu 2Vet Bình Thạnh</h3>
                     <p class="introduce-detail-p">2Vet Bình Thạnh là Bệnh viện Thú Y Đa khoa 
                       trong Khám, Chữa, Phẫu thuật chuyên sâu, spa làm đẹp, khách sạn uy tín 
@@ -268,7 +287,12 @@
                       bị hiện đại, cùng các hoạt động điều trị hiệu quả, khoa học, chúng tôi 
                       đảm bảo rằng mỗi cuộc khám bệnh đều được thực hiện một cách an toàn,  
                       chính xác và hiệu quả nhất với chi phí hợp lý. </p>    
+                  </div>
+                  <div>
+                    <img class="introduce-img" src="assets/img/dog.png" alt="">
+                  </div>
                 </div>
+                
             </div>
         </div>
         <div class="service">
@@ -279,46 +303,46 @@
             <div class="service-content">
                 <h3 class="introduce-detail-h3">Dịch vụ toàn diện
                 </h3>
-                <p class="introduce-detail-p">Đảm bảo thú cưng của bạn có cuộc sống dài lâu và khỏe mạnh với các <br> dịch vụ toàn diện và phương pháp 
-                    y khoa tiện tiến nhất.</p>
+                <p class="introduce-detail-p p-detail">Đảm bảo thú cưng của bạn có cuộc sống dài lâu và khỏe mạnh với các dịch vụ toàn diện và phương pháp 
+                    y khoa tiên tiến nhất.</p>
             </div>
             <div class="service-detail max-w-screen-xl mx-auto nt-5 md:mt-10 md:px-0">
                 <div class="service-detail-items owl-carousel owl-theme" id="slide-1">
                     <div class="service-items item">
                         <img class="img-service-detail" src="assets/img/service-8.png" alt="">
-                        <p class="hidden-mb">Cấp Cứu Thú Cưng 24/24</p>
+                        <p class="">Cấp Cứu Thú Cưng 24/24</p>
                     </div>
                     <div class="service-items item" >
                         <img class="img-service-detail" src="assets/img/service-2.png" alt="">
-                        <p class="hidden-mb">Phẫu Thuật Ngoại Khoa</p>
+                        <p class="">Phẫu Thuật Ngoại Khoa</p>
                     </div>
                     <div class="service-items item" > 
                       <img class="img-service-detail" src="assets/img/tiemphong.jpg" alt="">
-                      <p class="hidden-mb">Tiêm Phòng Vaccine</p>
+                      <p class="">Tiêm Phòng Vaccine</p>
                     </div>
                     <div class="service-items item" >
                         <img class="img-service-detail" src="assets/img/service-3.png" alt="">
-                        <p class="hidden-mb">Khám chữa bệnh và tiêm phòng</p>
+                        <p class="">Khám Định Kỳ/Tổng Quát</p>
                     </div>
                     <div class="service-items item" >
                         <img class="img-service-detail" src="assets/img/service-4.png" alt="">
-                        <p class="hidden-mb">Tắm Sấy, Spa & Cắt Tỉa</p>
+                        <p class="">Tắm Sấy, Spa & Cắt Tỉa</p>
                     </div>
                     <div class="service-items item" >
                       <img class="img-service-detail" src="assets/img/service-6.png" alt="">
-                      <p class="hidden-mb">Siêu Âm, X-Quang, Xét Nghiệm</p>
+                      <p class="">Siêu Âm, X-Quang, Xét Nghiệm</p>
                     </div>
                     <div class="service-items item" >
                         <img class="img-service-detail" src="assets/img/service-5.png" alt="">
-                        <p class="hidden-mb">Triệt Sản Chó Mèo</p>
+                        <p class="">Triệt Sản Chó Mèo</p>
                     </div>
                     <div class="service-items item" >
                         <img class="img-service-detail" src="assets/img/service-1.png" alt="">
-                        <p class="hidden-mb">Dịch Vụ Đưa & Đón Tại Nhà</p>
+                        <p class="">Dịch Vụ Đưa & Đón Tại Nhà</p>
                     </div>
                     <div class="service-items item" > 
                       <img class="img-service-detail" src="assets/img/service-7.png" alt="">
-                      <p class="hidden-mb">Khách Sạn Thú Cưng</p>
+                      <p class="">Khách Sạn Thú Cưng</p>
                     </div>
                     
                 </div>
@@ -387,28 +411,40 @@
             <div class="member-group">
                 <div class="member-detail-1 member-detail" data-aos="flip-left" data-aos-duration="1000">
                     <div class="member-content">
-                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                      <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
+                      <p>Tổng Giám Đốc</p>
+                      <p>Hệ Thống 2Vet</p>
                     </div>
                 </div>
                 <div class="member-detail-2 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
                     <div class="member-content">
-                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                      <h4>BSTY.NGUYỄN QUỐC HUY</h4>
+                      <p>Giám Đốc Bệnh Viện</p>
+                      <p> 2Vet Đường Láng</p>
                     </div>
                 </div>
                 <div class="member-detail-3 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="member-content">
-                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+                      <h4>BSTY.VÕ QUÝ THÀNH ĐẠT</h4>
+                      <p>Giám Đốc Bệnh Viện </p>
+                      <p> 2Vet Bình Thạnh</p>
+                        
+                    </div>
+                </div>
+                <div class="member-detail-5 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="member-content">
+                        <h4>TS.BSTY VÕ VĂN HẢI</h4>
+                        <p>Bác sỹ trưởng </p>
+                        <p>Hệ thống 2VET</p>
                     </div>
                 </div>
                 <div class="member-detail-4 member-detail" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="member-content">
-                        <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-                        <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
-                    </div>
-                </div>
+                  <div class="member-content">
+                      <h4>BSTY.LÊ PHƯƠNG ANH</h4>
+                      <p>Giám đốc </p>
+                      <p>BP Spa & Grooming</p>
+                  </div>
+              </div>
             </div>
         </div>
         <div>    
@@ -634,41 +670,48 @@
             </div>
         </div>
         <div class="center">
-            <div class="register">
-                <div class="register-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="register" id="register">
+                <div class="register-title">
                     <h1>ĐẶT LỊCH HẸN</h1>
                 </div>
                 <div class="center center-font">
-                    <div class="form" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="form">
                         <input class="form-size" type="text" name="name" placeholder="Tên của bạn*">
                     </div>
-                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="form" data-aos-delay="100">
                         <input class="form-size" type="tel" name="phone" placeholder="Số điện thoại của bạn*">
                     </div>
-                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="form" data-aos-delay="200">
                         <label for="Địa chỉ">Địa chỉ:</label>
                         <select class="form-size select-size" type="text" name="name" id="" p>
                             <option class="option" value="text">128 Chu Văn An, Phường 26, Quận Bình Thạnh</option>
                         </select>
                     </div>
-                    <div class="time" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" >
+                    <div class="time" data-aos-delay="300" >
                         <div class="date">
                             <label for="date">Ngày hẹn*</label>
                             <input class="time-size" type="date">
                         </div>
-                        <div class="time-detail date">
+                        <div class="date">
                             <label for="time">Thời gian:</label>
-                            <input class="time-size" type="time" name="time">
+                            <input class="time-size" type="time">
                         </div>
                     </div>
-                    <div class="form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="form" data-aos-delay="400">
                         <label for="service">Dịch vụ yêu cầu</label>
                         <select class="form-size" name="" id="" p>
-                            <option class="option"  value="text">Tiêm Phòng</option>
-                            <option  class="option" value="text">Làm Đẹp</option>
+                            <option class="option"  value="text">Cấp Cứu 24/24</option>
+                            <option  class="option" value="text">Khám Định Kỳ/ Tổng Quát</option>
+                            <option  class="option" value="text">Tiêm Phòng Vaccine</option>
+                            <option  class="option" value="text">Phẫu Thuật Ngoại Khoa</option>
+                            <option  class="option" value="text">Tắm Sấy, Spa và Cắt Tỉa</option>
+                            <option  class="option" value="text">Siêu Âm, X-Quang, Xét Nghiệm</option>
+                            <option  class="option" value="text">Triệt Sản Chó Mèo</option>
+                            <option  class="option" value="text">Dịch Vụ Đưa Đón Tại Nhà</option>
+                            <option  class="option" value="text">Khách Sạn Thú Cưng</option>
                         </select>
                     </div>
-                    <button class="register-button" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="register-button" >
                         GỬI THÔNG TIN
                     </button>
                 </div>
@@ -676,7 +719,21 @@
         </div>
         <div class="fixed z-10 bottom-20 right-10">
             <div class="flex flex-col items-center">
-              <div class="hidden md:block relative">
+              <div class=" relative">
+                <div
+                  class="absolute w-14 h-14 rounded-[50%] bg-[#eebc34d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+                  style="box-shadow: 0 0 0px 0px #eebc34d9"
+                ></div>
+      
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#e5b737] flex items-center justify-center"
+                >
+                <a href="#register">
+                  <img src="assets/img/30.png" alt="">
+                </a>
+                </div>
+              </div>
+              <div class="relative mt-[70px]">
                 <div
                   class="absolute w-14 h-14 rounded-[50%] bg-[#3788e5d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
                   style="box-shadow: 0 0 0px 0px #3788e5cc"
@@ -691,7 +748,7 @@
                 </div>
               </div>
       
-              <div class="hidden md:block relative mt-[70px]">
+              <div class="relative mt-[70px]">
                 <div
                   class="absolute w-14 h-14 rounded-[50%] bg-[#2196f3] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
                   style="box-shadow: 0 0 0px 0px #2196f3b3"
@@ -805,26 +862,23 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="script.js"></script>
-    <script>
-
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
+      <script>
+        function myFunction11() {
+          document.getElementById("myDropdown1").classList.toggle("show-1");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn-1')) {
+            var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+            var i;
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown1 = dropdowns1[i];
+              if (openDropdown1.classList.contains('show-1')) {
+                openDropdown1.classList.remove('show-1');
+              }
             }
           }
         }
-      }
-      </script>
+        </script>
     <script>
         AOS.init();
     </script>
