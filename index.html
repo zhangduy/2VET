@@ -19,31 +19,16 @@
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/vinh.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <link
       rel="stylesheet"
       href="/assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
     />
     <link href="assets/img/aos-master/dist/aos.css" rel="stylesheet" />
     <script src="assets/img/aos-master/dist/aos.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-S394CTHRPC"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-S394CTHRPC');
-    </script>
   </head>
   <body class="font-primary">
     <div class="web">
@@ -168,11 +153,44 @@
                         href="./introduce.html"
                         >Giới thiệu</a
                       >
-                      <a
-                        class="py-[15px] px-4 sm:px-6 font-bold text-primary uppercase border-b border-[#ececec]"
-                        href="./service.html"
-                        >Dịch vụ toàn diện</a
+                      <div
+                        class="dropdown-1 text-base block cursor-pointer hover:text-primary transition-all text-gray font-bold border-b border-[#ececec]"
                       >
+                        <a
+                          class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
+                          href="./service.html"
+                          >Dịch vụ toàn diện</a
+                        >
+                        <div id="myDropdown1" class="dropdown-content1">
+                          <a class="dropdown-items1" href="./service.html"
+                            >Cấp Cứu 24/24</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Khám Định Kỳ/Tổng Quát</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Tiêm Phòng Vaccine</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Phẫu Thuật Ngoại Khoa</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Tắm Sấy, Spa và Cắt Tỉa</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Siêu Âm, X-quang, Xét Nghiệm</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Triệt Sản Chó Mèo</a
+                          >
+                          <a class="dropdown-items1" href="./service.html"
+                            >Dịch Vụ Đưa Đón Tại Nhà</a
+                          >
+                          <a class="dropdown-items-2" href="./service.html"
+                            >Khách Sạn Thú Cưng</a
+                          >
+                        </div>
+                      </div>
                       <a
                         class="py-[15px] px-4 sm:px-6 font-bold text-gray uppercase border-b border-[#ececec]"
                         href="/member.html"
@@ -220,48 +238,50 @@
           class="flex items-center justify-end w-full h-full mx-auto space-x-10"
         >
           <a
-            class="text-lg block cursor-pointer text-primary font-bold"
+            class="text-xl block cursor-pointer text-primary font-bold"
             href="./index.html"
             >Trang chủ</a
           >
           <a
-            class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+            class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
             href="./introduce.html"
             >Giới thiệu</a
           >
           <div
-            class="dropdown text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+            class="dropdown text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
           >
-            <button onclick="myFunction()" class="dropbtn">
-              Dịch vụ toàn diện
-            </button>
+            <a
+              class="dropbtn-1 text-xl block cursor-pointer text-primary font-bold"
+              href="./service.html"
+              >Dịch vụ toàn diện
+            </a>
+            <!-- <button class="dropbtn">Dịch vụ toàn diện</button> -->
             <div id="myDropdown" class="dropdown-content">
-              <a class="dropdown-items" href="#">Cấp cứu 24/24</a>
-              <a class="dropdown-items" href="#">Phẫu thuật ngoại khoa</a>
-              <a class="dropdown-items" href="#"
-                >Khám chữa bệnh và tiêm phòng</a
-              >
-              <a class="dropdown-items" href="#">Tắm sấy, Spa và Cắt tỉa</a>
+              <a class="dropdown-items" href="#">Cấp Cứu 24/24</a>
+              <a class="dropdown-items" href="#">Khám Định Kỳ/Tổng Quát</a>
+              <a class="dropdown-items" href="#">Tiêm Phòng Vaccine</a>
+              <a class="dropdown-items" href="#">Phẫu Thuật Ngoại Khoa</a>
+              <a class="dropdown-items" href="#">Tắm sấy, Spa Và Cắt Tỉa</a>
               <a class="dropdown-items" href="#"
                 >Siêu Âm, X-quang, Xét nghiệm</a
               >
-              <a class="dropdown-items" href="#">Triệt sản chó mèo</a>
-              <a class="dropdown-items" href="#">Dịch vụ đưa đón tại nhà</a>
-              <a href="#">Khách sạn thú cưng</a>
+              <a class="dropdown-items" href="#">Triệt Sản Chó Mèo</a>
+              <a class="dropdown-items" href="#">Dịch Vụ Đưa Đón Tại Nhà</a>
+              <a href="#">Khách Sạn Thú Cưng</a>
             </div>
           </div>
           <a
-            class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+            class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
             href="./member.html"
             >Ưu đãi</a
           >
           <a
-            class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+            class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
             href="./news.html"
             >Kiến thức</a
           >
           <a
-            class="text-lg block cursor-pointer hover:text-primary transition-all text-gray font-bold"
+            class="text-xl block cursor-pointer hover:text-primary transition-all text-gray font-bold"
             href="./activity.html"
             >Hoạt động sự kiện</a
           >
@@ -295,20 +315,25 @@
               <source src="assets/img/B.mp4" type="video/mp4" />
             </video>
           </div>
-          <div
-            class="introduce-detail introduce-size"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <h3 class="introduce-detail-h3">Giới thiệu 2Vet Bình Thạnh</h3>
-            <p class="introduce-detail-p">
-              2Vet Bình Thạnh là Bệnh viện Thú Y Đa khoa trong Khám, Chữa, Phẫu
-              thuật chuyên sâu, spa làm đẹp, khách sạn uy tín dành cho Thú cưng.
-              Với đội ngũ chuyên gia - Bác sĩ hàng đầu, trang thiết bị hiện đại,
-              cùng các hoạt động điều trị hiệu quả, khoa học, chúng tôi đảm bảo
-              rằng mỗi cuộc khám bệnh đều được thực hiện một cách an toàn, chính
-              xác và hiệu quả nhất với chi phí hợp lý.
-            </p>
+          <div class="introduce-size">
+            <div
+              class="introduce-detail"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h3 class="introduce-detail-h3">Giới thiệu 2Vet Bình Thạnh</h3>
+              <p class="introduce-detail-p">
+                2Vet Bình Thạnh là Bệnh viện Thú Y Đa khoa trong Khám, Chữa,
+                Phẫu thuật chuyên sâu, spa làm đẹp, khách sạn uy tín dành cho
+                Thú cưng. Với đội ngũ chuyên gia - Bác sĩ hàng đầu, trang thiết
+                bị hiện đại, cùng các hoạt động điều trị hiệu quả, khoa học,
+                chúng tôi đảm bảo rằng mỗi cuộc khám bệnh đều được thực hiện một
+                cách an toàn, chính xác và hiệu quả nhất với chi phí hợp lý.
+              </p>
+            </div>
+            <div>
+              <img class="introduce-img" src="assets/img/dog.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -318,10 +343,9 @@
         </div>
         <div class="service-content">
           <h3 class="introduce-detail-h3">Dịch vụ toàn diện</h3>
-          <p class="introduce-detail-p">
+          <p class="introduce-detail-p p-detail">
             Đảm bảo thú cưng của bạn có cuộc sống dài lâu và khỏe mạnh với các
-            <br />
-            dịch vụ toàn diện và phương pháp y khoa tiện tiến nhất.
+            dịch vụ toàn diện và phương pháp y khoa tiên tiến nhất.
           </p>
         </div>
         <div
@@ -334,7 +358,7 @@
                 src="assets/img/service-8.png"
                 alt=""
               />
-              <p class="hidden-mb">Cấp Cứu Thú Cưng 24/24</p>
+              <p class="">Cấp Cứu Thú Cưng 24/24</p>
             </div>
             <div class="service-items item">
               <img
@@ -342,7 +366,7 @@
                 src="assets/img/service-2.png"
                 alt=""
               />
-              <p class="hidden-mb">Phẫu Thuật Ngoại Khoa</p>
+              <p class="">Phẫu Thuật Ngoại Khoa</p>
             </div>
             <div class="service-items item">
               <img
@@ -350,7 +374,7 @@
                 src="assets/img/tiemphong.jpg"
                 alt=""
               />
-              <p class="hidden-mb">Tiêm Phòng Vaccine</p>
+              <p class="">Tiêm Phòng Vaccine</p>
             </div>
             <div class="service-items item">
               <img
@@ -358,7 +382,7 @@
                 src="assets/img/service-3.png"
                 alt=""
               />
-              <p class="hidden-mb">Khám chữa bệnh và tiêm phòng</p>
+              <p class="">Khám Định Kỳ/Tổng Quát</p>
             </div>
             <div class="service-items item">
               <img
@@ -366,7 +390,7 @@
                 src="assets/img/service-4.png"
                 alt=""
               />
-              <p class="hidden-mb">Tắm Sấy, Spa & Cắt Tỉa</p>
+              <p class="">Tắm Sấy, Spa & Cắt Tỉa</p>
             </div>
             <div class="service-items item">
               <img
@@ -374,7 +398,7 @@
                 src="assets/img/service-6.png"
                 alt=""
               />
-              <p class="hidden-mb">Siêu Âm, X-Quang, Xét Nghiệm</p>
+              <p class="">Siêu Âm, X-Quang, Xét Nghiệm</p>
             </div>
             <div class="service-items item">
               <img
@@ -382,7 +406,7 @@
                 src="assets/img/service-5.png"
                 alt=""
               />
-              <p class="hidden-mb">Triệt Sản Chó Mèo</p>
+              <p class="">Triệt Sản Chó Mèo</p>
             </div>
             <div class="service-items item">
               <img
@@ -390,7 +414,7 @@
                 src="assets/img/service-1.png"
                 alt=""
               />
-              <p class="hidden-mb">Dịch Vụ Đưa & Đón Tại Nhà</p>
+              <p class="">Dịch Vụ Đưa & Đón Tại Nhà</p>
             </div>
             <div class="service-items item">
               <img
@@ -398,7 +422,7 @@
                 src="assets/img/service-7.png"
                 alt=""
               />
-              <p class="hidden-mb">Khách Sạn Thú Cưng</p>
+              <p class="">Khách Sạn Thú Cưng</p>
             </div>
           </div>
         </div>
@@ -527,7 +551,8 @@
           >
             <div class="member-content">
               <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-              <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+              <p>Tổng Giám Đốc</p>
+              <p>Hệ Thống 2Vet</p>
             </div>
           </div>
           <div
@@ -537,8 +562,9 @@
             data-aos-delay="100"
           >
             <div class="member-content">
-              <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-              <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+              <h4>BSTY.NGUYỄN QUỐC HUY</h4>
+              <p>Giám Đốc Bệnh Viện</p>
+              <p>2Vet Đường Láng</p>
             </div>
           </div>
           <div
@@ -548,8 +574,21 @@
             data-aos-delay="200"
           >
             <div class="member-content">
-              <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-              <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+              <h4>BSTY.VÕ QUÝ THÀNH ĐẠT</h4>
+              <p>Giám Đốc Bệnh Viện</p>
+              <p>2Vet Bình Thạnh</p>
+            </div>
+          </div>
+          <div
+            class="member-detail-5 member-detail"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div class="member-content">
+              <h4>TS.BSTY VÕ VĂN HẢI</h4>
+              <p>Bác sỹ trưởng</p>
+              <p>Hệ thống 2VET</p>
             </div>
           </div>
           <div
@@ -559,8 +598,9 @@
             data-aos-delay="300"
           >
             <div class="member-content">
-              <h4>BSTY.TRIỆU TRUNG THÀNH</h4>
-              <p>Tổng Giám Đốc Hệ Thống 2Vet</p>
+              <h4>BSTY.LÊ PHƯƠNG ANH</h4>
+              <p>Giám đốc</p>
+              <p>BP Spa & Grooming</p>
             </div>
           </div>
         </div>
@@ -803,99 +843,95 @@
         </div>
       </div>
 
-      <div class="my-10 md:px-10 max-w-screen-lg mx-auto">
-        <div class="h-12 md:h-20 bg-[#E17B26] flex items-center px-6 md:px-10">
-          <h1 class="text-white text-lg md:text-4xl uppercase font-bold">
-            Đặt lịch hẹn
-          </h1>
-        </div>
-
-        <form
-          id="my-form"
-          class="px-4 md:px-10 pt-5 md:pt-10"
-          method="post"
-          action="https://script.google.com/macros/s/AKfycbyny0zp04meIMiG87K4y5LdTln43WBessOGgR0jg9o495ifg5ARokr4baP9x4PrvG_4YQ/exec"
-        >
-          <div class="flex flex-col space-y-8">
-            <div>
+      <div class="center">
+        <div class="register" id="register">
+          <div class="register-title">
+            <h1>ĐẶT LỊCH HẸN</h1>
+          </div>
+          <form
+            id="my-form"
+            class="px-4 md:px-10 pt-5 md:pt-10"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbyny0zp04meIMiG87K4y5LdTln43WBessOGgR0jg9o495ifg5ARokr4baP9x4PrvG_4YQ/exec"
+          >
+            <div class="form">
               <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                class="form-size"
                 type="text"
                 name="Name"
                 placeholder="Tên của bạn*"
-                required
               />
             </div>
-
-            <div>
+            <div class="form" data-aos-delay="100">
               <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+                id="phone"
+                class="form-size"
                 type="tel"
                 name="Phone"
                 placeholder="Số điện thoại của bạn*"
-                required
               />
             </div>
-
-            <div>
-              <label for="address" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                >Địa chỉ:</label
-              >
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
+            <div class="form" data-aos-delay="200">
+              <label for="Địa chỉ">Địa chỉ:</label>
+              <select
+                class="form-size select-size"
                 type="text"
-                name="Address"
-                value="128 Chu Văn An, Phường 26, Quận Bình Thạnh"
-                required
-              />
+                name="name"
+                id=""
+                p
+              >
+                <option class="option" value="text">
+                  128 Chu Văn An, Phường 26, Quận Bình Thạnh
+                </option>
+              </select>
             </div>
-
-            <div class="flex items-center justify-between space-x-4">
-              <div class="w-full">
-                <label for="date" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                  >Ngày hẹn*:</label
-                >
-                <input
-                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                  type="date"
-                  name="Date of service"
-                  required
-                />
+            <div class="time" data-aos-delay="300">
+              <div class="date">
+                <label for="date">Ngày hẹn*</label>
+                <input class="time-size" name="Date of service" type="date" />
               </div>
-
-              <div class="w-full">
-                <label for="time" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                  >Thời gian:</label
-                >
-                <input
-                  class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                  type="time"
-                  name="Time of service"
-                />
+              <div class="date">
+                <label for="time">Thời gian:</label>
+                <input class="time-size" name="Time of service" type="time" />
               </div>
             </div>
-
-            <div>
-              <label for="service" class="text-[#344A5F] mb-2 ml-2 md:ml-4"
-                >Dịch vụ yêu cầu:</label
-              >
-              <input
-                class="border border-[#BBBDBF] rounded-md h-11 w-full px-2 md:px-4 text-[#344A5F]"
-                type="text"
-                name="Service"
-                placeholder="Tiêm phòng"
-              />
+            <div class="form" data-aos-delay="400">
+              <label for="service">Dịch vụ yêu cầu</label>
+              <select class="form-size" name="Service" id="" p>
+                <option class="option" value="Cấp cứu 24/24">
+                  Cấp Cứu 24/24
+                </option>
+                <option class="option" value="Khám định kỳ/ Tổng quát">
+                  Khám Định Kỳ/ Tổng Quát
+                </option>
+                <option class="option" value="Tiêm phòng Vaccine">
+                  Tiêm Phòng Vaccine
+                </option>
+                <option class="option" value="Phẫu thuật ngoại khoa">
+                  Phẫu Thuật Ngoại Khoa
+                </option>
+                <option class="option" value="Tắm sấy, Spa và cắt tỉa">
+                  Tắm Sấy, Spa và Cắt Tỉa
+                </option>
+                <option class="option" value="Siêu âm, X-Quang, Xét nghiệm">
+                  Siêu Âm, X-Quang, Xét Nghiệm
+                </option>
+                <option class="option" value="Triệt sản Chó Mèo">
+                  Triệt Sản Chó Mèo
+                </option>
+                <option class="option" value="Dịch vụ đưa đón tại nhà">
+                  Dịch Vụ Đưa Đón Tại Nhà
+                </option>
+                <option class="option" value="Khách sạn thú cưng">
+                  Khách Sạn Thú Cưng
+                </option>
+              </select>
             </div>
-
             <div class="text-center">
-              <button
-                class="uppercase h-10 font-bold md:text-xl text-white bg-[#E17B26] px-4 rounded-lg"
-              >
-                Gửi thông tin
-              </button>
+              <button class="register-button">GỬI THÔNG TIN</button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
 
       <div
@@ -927,7 +963,21 @@
 
       <div class="fixed z-10 bottom-20 right-10">
         <div class="flex flex-col items-center">
-          <div class="hidden md:block relative">
+          <div class="relative">
+            <div
+              class="absolute w-14 h-14 rounded-[50%] bg-[#eebc34d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
+              style="box-shadow: 0 0 0px 0px #eebc34d9"
+            ></div>
+
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#e5b737] flex items-center justify-center"
+            >
+              <a href="#register">
+                <img src="assets/img/30.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="relative mt-[70px]">
             <div
               class="absolute w-14 h-14 rounded-[50%] bg-[#3788e5d9] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
               style="box-shadow: 0 0 0px 0px #3788e5cc"
@@ -942,7 +992,7 @@
             </div>
           </div>
 
-          <div class="hidden md:block relative mt-[70px]">
+          <div class="relative mt-[70px]">
             <div
               class="absolute w-14 h-14 rounded-[50%] bg-[#2196f3] -translate-x-1/2 -translate-y-1/2 animate-zoom border-2 border-transparent"
               style="box-shadow: 0 0 0px 0px #2196f3b3"
@@ -971,7 +1021,6 @@
           </div>
         </div>
       </div>
-
       <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
         <div class="max-w-screen-xl mx-auto px-4 md:px-0">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
@@ -1060,18 +1109,17 @@
     ></script>
     <script src="script.js"></script>
     <script>
-      function myFunction() {
-        document.getElementById('myDropdown').classList.toggle('show');
+      function myFunction11() {
+        document.getElementById('myDropdown1').classList.toggle('show-1');
       }
-
       window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName('dropdown-content');
+        if (!event.target.matches('.dropbtn-1')) {
+          var dropdowns1 = document.getElementsByClassName('dropdown-content1');
           var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
+          for (i = 0; i < dropdowns1.length; i++) {
+            var openDropdown1 = dropdowns1[i];
+            if (openDropdown1.classList.contains('show-1')) {
+              openDropdown1.classList.remove('show-1');
             }
           }
         }
@@ -1096,6 +1144,7 @@
         const openButton = document.getElementById('open-button');
         const closeButton = document.getElementById('close-button');
         const loading = document.getElementById('loading');
+        const phone = document.getElementById('phone');
 
         function openSlideOver() {
           slideOver.classList.remove('hidden');
@@ -1125,6 +1174,13 @@
           e.preventDefault();
           const data = new FormData(form);
           const action = e.target.action;
+
+          const phonePattern = /^[0-9]{10}$/;
+          if (!phonePattern.test(phone.value)) {
+            alert('Số điện thoại không hợp lệ. Vui lòng nhập lại.');
+            return;
+          }
+
           loading.classList.remove('hidden');
           fetch(action, {
             method: 'POST',

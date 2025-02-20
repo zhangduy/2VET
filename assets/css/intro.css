@@ -247,7 +247,8 @@
 .member-detail-4{
     background-image: url("../img/group-4.png");
 }
-.member-detail {display: flex;
+.member-detail {
+    display: flex;
     justify-content: center;
     align-items: end;
     width: 24%;
@@ -444,6 +445,8 @@
 .date {
     width: 48%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 .time-size {
     width: 100%;
@@ -756,6 +759,22 @@
     .work-items {
         width: 45%;
         height: 21vw;
+    }
+    .hospital-more {
+        width: 90%;
+    }
+    .more-title {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .more-title-detail {
+        font-size: 15px;
+    }
+    .time-size {
+        width: 100%;
+        border-radius: 8px;
+        border: 0.7px solid #BBBDBF;
+        padding: 10px 20px;
     }
 }   
 
