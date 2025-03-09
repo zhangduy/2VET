@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -661,6 +661,139 @@
         </div>
       </div>
     </div>
+
+    <div class="relative z-10 hidden" id="dialog">
+      <div class="fixed inset-0 bg-gray-500/75 transition-opacity"></div>
+
+      <div class="fixed inset-0 z-50 w-screen overflow-y-auto bg-black/80">
+        <div
+          class="flex min-h-full justify-center p-4 text-center items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl"
+          >
+            <button
+              id="closeBtn"
+              class="absolute top-1 right-1 px-3 py-1 hover:bg-slate-100 rounded"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="bg-white px-4 pt-10 pb-4 sm:p-6 sm:pb-4">
+              <div class="flex flex-col items-center">
+                <div
+                  class="bg-[#e17b26] py-2 max-w-md w-full text-center text-white"
+                >
+                  <h1 class="text-2xl font-bold">ĐẶT LỊCH HẸN</h1>
+                </div>
+                <form
+                  id="my-form-dialog"
+                  class="md:px-10 space-y-3 mt-10"
+                  method="post"
+                  action="https://script.google.com/macros/s/AKfycbzPWXimC32kuIcZnCnyGm764oEcbIkpBjFwNI5mrpzh8y4JEHWgLhD7kJ_OOYYYEljh/exec"
+                >
+                  <div>
+                    <input
+                      class="form-size"
+                      type="text"
+                      name="Name"
+                      placeholder="Tên của bạn*"
+                    />
+                  </div>
+                  <div data-aos-delay="100">
+                    <input
+                      id="phone-dialog"
+                      class="form-size"
+                      type="tel"
+                      name="Phone"
+                      placeholder="Số điện thoại của bạn*"
+                    />
+                  </div>
+                  <div data-aos-delay="200">
+                    <label for="Địa chỉ">Địa chỉ:</label>
+                    <select
+                      class="form-size select-size"
+                      type="text"
+                      name="name"
+                      id=""
+                      p
+                    >
+                      <option class="option" value="text">
+                        128 Chu Văn An, Phường 26, Quận Bình Thạnh
+                      </option>
+                    </select>
+                  </div>
+                  <div
+                    class="flex items-center justify-between"
+                    data-aos-delay="300"
+                  >
+                    <div class="date">
+                      <label for="date">Ngày hẹn*</label>
+                      <input
+                        class="time-size"
+                        name="Date of service"
+                        type="date"
+                      />
+                    </div>
+                    <div class="date">
+                      <label for="time">Thời gian:</label>
+                      <input
+                        class="time-size"
+                        name="Time of service"
+                        type="time"
+                      />
+                    </div>
+                  </div>
+                  <div data-aos-delay="400">
+                    <label for="service">Dịch vụ yêu cầu</label>
+                    <select class="form-size" name="Service" id="" p>
+                      <option class="option" value="Cấp cứu 24/24">
+                        Cấp Cứu 24/24
+                      </option>
+                      <option class="option" value="Khám định kỳ/ Tổng quát">
+                        Khám Định Kỳ/ Tổng Quát
+                      </option>
+                      <option class="option" value="Tiêm phòng Vaccine">
+                        Tiêm Phòng Vaccine
+                      </option>
+                      <option class="option" value="Phẫu thuật ngoại khoa">
+                        Phẫu Thuật Ngoại Khoa
+                      </option>
+                      <option class="option" value="Tắm sấy, Spa và cắt tỉa">
+                        Tắm Sấy, Spa và Cắt Tỉa
+                      </option>
+                      <option
+                        class="option"
+                        value="Siêu âm, X-Quang, Xét nghiệm"
+                      >
+                        Siêu Âm, X-Quang, Xét Nghiệm
+                      </option>
+                      <option class="option" value="Triệt sản Chó Mèo">
+                        Triệt Sản Chó Mèo
+                      </option>
+                      <option class="option" value="Dịch vụ đưa đón tại nhà">
+                        Dịch Vụ Đưa Đón Tại Nhà
+                      </option>
+                      <option class="option" value="Khách sạn thú cưng">
+                        Khách Sạn Thú Cưng
+                      </option>
+                    </select>
+                  </div>
+                  <div class="text-center pt-8">
+                    <button
+                      type="submit"
+                      class="bg-[#e17b26] py-2.5 px-7 rounded text-white font-bold"
+                    >
+                      GỬI THÔNG TIN
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-[#E17B26] pt-12 md:pt-20 pb-5">
       <div class="max-w-screen-xl mx-auto px-4 md:px-0">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-10">
@@ -757,55 +890,91 @@
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const slideOver = document.getElementById("slide-over");
-        const panel = document.getElementById("panel");
-        const openButton = document.getElementById("open-button");
-        const closeButton = document.getElementById("close-button");
-        const loading = document.getElementById("loading");
-        const phone = document.getElementById("phone");
+      document.addEventListener('DOMContentLoaded', () => {
+        const slideOver = document.getElementById('slide-over');
+        const panel = document.getElementById('panel');
+        const openButton = document.getElementById('open-button');
+        const closeButton = document.getElementById('close-button');
+        const loading = document.getElementById('loading');
+        const phone = document.getElementById('phone');
+        const phoneDialog = document.getElementById('phone-dialog');
+
+        setTimeout(() => {
+          document.getElementById('dialog').classList.remove('hidden');
+        }, 3000);
+
+        document
+          .getElementById('closeBtn')
+          .addEventListener('click', function () {
+            document.getElementById('dialog').classList.add('hidden');
+          });
 
         function openSlideOver() {
-          slideOver.classList.remove("hidden");
-          panel.classList.remove("-translate-x-full");
-          panel.classList.add("translate-x-0");
+          slideOver.classList.remove('hidden');
+          panel.classList.remove('-translate-x-full');
+          panel.classList.add('translate-x-0');
         }
 
         function closeSlideOver() {
-          panel.classList.remove("translate-x-0");
-          panel.classList.add("-translate-x-full");
+          panel.classList.remove('translate-x-0');
+          panel.classList.add('-translate-x-full');
           setTimeout(() => {
-            slideOver.classList.add("hidden");
+            slideOver.classList.add('hidden');
           }, 300);
         }
 
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
+        const myForm = document.getElementById('my-form');
+        const formDialog = document.getElementById('my-form-dialog');
+
+        myForm.addEventListener('submit', function (e) {
           e.preventDefault();
-          const data = new FormData(form);
+          const data = new FormData(myForm);
           const action = e.target.action;
 
           const phonePattern = /^[0-9]{10}$/;
           if (!phonePattern.test(phone.value)) {
-            alert("Số điện thoại không hợp lệ. Vui lòng nhập lại.");
+            alert('Số điện thoại không hợp lệ. Vui lòng nhập lại.');
             return;
           }
 
-          loading.classList.remove("hidden");
+          loading.classList.remove('hidden');
           fetch(action, {
-            method: "POST",
+            method: 'POST',
             body: data,
           }).then(() => {
-            loading.classList.add("hidden");
-            form.reset();
-            alert("Đã gửi thành công!");
+            loading.classList.add('hidden');
+            myForm.reset();
+            alert('Đã gửi thành công!');
           });
         });
 
-        openButton.addEventListener("click", openSlideOver);
-        closeButton.addEventListener("click", closeSlideOver);
+        formDialog.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(formDialog);
+          const action = e.target.action;
 
-        slideOver.addEventListener("click", (e) => {
+          const phonePattern = /^[0-9]{10}$/;
+          if (!phonePattern.test(phoneDialog.value)) {
+            alert('Số điện thoại không hợp lệ. Vui lòng nhập lại.');
+            return;
+          }
+
+          loading.classList.remove('hidden');
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          }).then(() => {
+            loading.classList.add('hidden');
+            formDialog.reset();
+            document.getElementById('dialog').classList.add('hidden');
+            alert('Đã gửi thành công!');
+          });
+        });
+
+        openButton.addEventListener('click', openSlideOver);
+        closeButton.addEventListener('click', closeSlideOver);
+
+        slideOver.addEventListener('click', (e) => {
           if (e.target === slideOver) {
             closeSlideOver();
           }
@@ -813,7 +982,7 @@
       });
 
       $(document).ready(function () {
-        $("#slide-1").owlCarousel({
+        $('#slide-1').owlCarousel({
           center: true,
           loop: true,
           margin: 70,
@@ -831,7 +1000,7 @@
             },
           },
         });
-        $("#slide-3").owlCarousel({
+        $('#slide-3').owlCarousel({
           center: true,
           loop: true,
           margin: 70,
@@ -855,17 +1024,17 @@
     <script src="script.js"></script>
     <script>
       function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById('myDropdown').classList.toggle('show');
       }
 
       window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName('dropdown-content');
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
             }
           }
         }
@@ -873,16 +1042,16 @@
     </script>
     <script>
       function myFunction11() {
-        document.getElementById("myDropdown1").classList.toggle("show-1");
+        document.getElementById('myDropdown1').classList.toggle('show-1');
       }
       window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn-1")) {
-          var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+        if (!event.target.matches('.dropbtn-1')) {
+          var dropdowns1 = document.getElementsByClassName('dropdown-content1');
           var i;
           for (i = 0; i < dropdowns1.length; i++) {
             var openDropdown1 = dropdowns1[i];
-            if (openDropdown1.classList.contains("show-1")) {
-              openDropdown1.classList.remove("show-1");
+            if (openDropdown1.classList.contains('show-1')) {
+              openDropdown1.classList.remove('show-1');
             }
           }
         }
