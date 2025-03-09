@@ -177,6 +177,12 @@
   color: var(--text-color);
   margin: 0px;
 }
+.p-detail {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0px;
+}
 .service {
   background-color: var(--non-orange-color);
 }
@@ -199,10 +205,8 @@
 }
 .service-detail-items {
   display: flex;
-  height: 80%;
 }
 .service-items {
-  height: 80%;
   background-color: var(--orange-color);
   border-radius: 10px;
   display: flex;
@@ -604,6 +608,24 @@
 .p-detail {
   width: 60%;
 }
+.dropdown-content1 {
+display: flex;
+flex-direction: column;
+margin-left: 15px;
+}
+.dropdown-items1 {
+  padding-left: 20px;
+  border-bottom: 1px solid #FFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #F9A11F;
+}
+.dropdown-items-2 {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #F9A11F;
+}
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -613,7 +635,7 @@ html:focus-within {
     opacity: 0;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 515px) {
   .hospital-detail-items {
     min-width: 25%;
     height: auto;
@@ -634,7 +656,9 @@ html:focus-within {
     padding-top: 2vw;
   }
   .p-detail {
-    width: 80%;
+    width: 70%;
+    font-size: 12px;
+    text-align: center;
   }
   .introduce-size {
     width: 100%;
@@ -647,7 +671,7 @@ html:focus-within {
     width: 80%;
   }
   .introduce-detail-h3 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
   .navbar-menu {
@@ -769,6 +793,17 @@ html:focus-within {
   .work-items {
     width: 45%;
     height: 21vw;
+  }
+  .time {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 2vw;
+  }
+  .date {
+    width: 95%;
   }
   .time-size {
     width: 100%;
